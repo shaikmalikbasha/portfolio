@@ -11,77 +11,126 @@
 
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
+      <link rel="manifest" href="assets/favicons/site.webmanifest">
     </head>
 
     <body>
         <!-- ================= HEADER / NAVBAR ================= -->
-        <header>
-            <!-- Fixed Navbar -->
-            <div class="navbar-fixed">
-                <nav class="pink darken-4">
-                    <div class="nav-wrapper container">
+        <div class="header-section">
+            <header>
+                <!-- Fixed Navbar -->
+                <div class="navbar-fixed">
+                    <nav class="pink darken-4">
+                        <div class="nav-wrapper container">
 
-                        <!-- Brand / Logo -->
-                        <a href="#home" class="brand-logo">
-                            <img src="assets/images/malik-shaik-icon.png" alt="Shaik Malik Basha" class="logo-img">
-                        </a>
+                            <!-- Brand / Logo -->
+                            <a href="index.html" class="brand-logo">
+                                <img src="assets/images/malik-shaik-icon.png" alt="Shaik Malik Basha" class="logo-img">
+                            </a>
 
-                        <!-- Mobile Menu Trigger -->
-                        <a href="#" data-target="mobile-nav" class="sidenav-trigger left">
-                            <i class="material-icons">menu</i>
-                        </a>
+                            <!-- Mobile Menu Trigger -->
+                            <a href="#" data-target="mobile-nav" class="sidenav-trigger left">
+                                <i class="material-icons">menu</i>
+                            </a>
 
-                        <!-- Desktop Navigation -->
-                        <ul class="right hide-on-med-and-down">
-                            <li><a href="#home"><i class="material-icons left">home</i>Home</a></li>
-                            <li><a href="#about"><i class="material-icons left">person</i>About</a></li>
-                            <li><a href="#skills"><i class="material-icons left">build</i>Skills</a></li>
-                            <li><a href="#experience"><i class="material-icons left">work</i>Experience</a></li>
-                            <li><a href="#projects"><i class="material-icons left">folder</i>Projects</a></li>
-                            <li><a href="#contact"><i class="material-icons left">email</i>Contact</a></li>
-                            <li>
-                                <a href="assets/docs/ShaikMalikBasha_DataEngineer_Resume_2025.pdf" 
-                                class="btn waves-effect waves-light grey darken-4"
-                                target="_blank">
-                                <i class="material-icons left">file_download</i>Resume
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
-            </div>
-
-            <!-- Start: Mobile Side Navigation -->
-            <ul class="sidenav" id="mobile-nav">
-                <li>
-                    <div class="user-view">
-                        <div class="background">
-                            <img src="assets/images/office.jpg">
+                            <!-- Desktop Navigation -->
+                            <ul class="right hide-on-med-and-down">
+                                <li><a href="#home"><i class="material-icons left">home</i>Home</a></li>
+                                <li><a href="#about"><i class="material-icons left">person</i>About</a></li>
+                                <li><a href="#skills"><i class="material-icons left">build</i>Skills</a></li>
+                                <li><a href="#experience"><i class="material-icons left">work</i>Experience</a></li>
+                                <li><a href="#projects"><i class="material-icons left">folder</i>Projects</a></li>
+                                <li><a href="#contact"><i class="material-icons left">email</i>Contact</a></li>
+                                <li>
+                                    <a href="assets/docs/ShaikMalikBasha_DataEngineer_Resume_2025.pdf" 
+                                    class="btn waves-effect waves-light grey darken-4"
+                                    target="_blank">
+                                    <i class="material-icons left">file_download</i>Resume
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
-                        <a href="#user"><img class="circle" src="assets/images/malik-shaik-icon.png"></a>
-                        <a href="#name"><span class="white-text name">Shaik Malik Basha</span></a>
-                        <a href="#email"><span class="white-text email">shaikmalikbasha1998@gmail.com</span></a>
-                    </div>
-                </li>
-                <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
-                <li><a href="#!">Second Link</a></li>
-                <li><div class="divider"></div></li>
+                    </nav>
+                </div>
 
-                <li><a href="#home"><i class="material-icons left">home</i>Home</a></li>
-                <li><a href="#about"><i class="material-icons left">person</i>About</a></li>
-                <li><a href="#skills"><i class="material-icons left">build</i>Skills</a></li>
-                <li><a href="#experience"><i class="material-icons left">work</i>Experience</a></li>
-                <li><a href="#projects"><i class="material-icons left">folder</i>Projects</a></li>
-                <li><a href="#contact"><i class="material-icons left">email</i>Contact</a></li>
-                <li class="divider"></li>
-                <li>
-                <a href="assets/docs/ShaikMalikBasha_DataEngineer_Resume_2025.pdf" target="_blank">
-                    <i class="material-icons left">file_download</i>Download Resume
-                </a>
-                </li>
-            </ul>
-            <!-- END: Mobile Side Navigation -->
-        </header>
+                <!-- Start: Mobile Side Navigation -->
+                <ul class="sidenav" id="mobile-nav">
+                    <li>
+                        <div class="user-view">
+                            <div class="background">
+                                <img class="responsive-img" src="assets/images/office.jpg">
+                            </div>
+                            <a href="#user"><img class="circle" src="assets/images/malik-shaik-icon.png"></a>
+                            <a href="#name"><span class="black-text bold name">Shaik Malik Basha</span></a>
+                            <a href="#email"><span class="black-text bold email">shaikmalikbasha1998@gmail.com</span></a>
+                        </div>
+                    </li>
+                    <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
+                    <li><a href="#!">Second Link</a></li>
+                    <li><div class="divider"></div></li>
+
+                    <li><a href="#home"><i class="material-icons left">home</i>Home</a></li>
+                    <li><a href="#about"><i class="material-icons left">person</i>About</a></li>
+                    <li><a href="#skills"><i class="material-icons left">build</i>Skills</a></li>
+                    <li><a href="#experience"><i class="material-icons left">work</i>Experience</a></li>
+                    <li><a href="#projects"><i class="material-icons left">folder</i>Projects</a></li>
+                    <li><a href="#contact"><i class="material-icons left">email</i>Contact</a></li>
+                    <li class="divider"></li>
+                    <li>
+                    <a href="assets/docs/ShaikMalikBasha_DataEngineer_Resume_2025.pdf" target="_blank">
+                        <i class="material-icons left">file_download</i>Download Resume
+                    </a>
+                    </li>
+                </ul>
+                <!-- END: Mobile Side Navigation -->
+            </header>
+        </div>
+
+        <!-- ================= HERO SECTION ================= -->
+        <div class="hero-section">
+            <section id="hero-section" class="section scrollspy white darken-1">
+                <div class="container">
+                    <!-- Row with centered content on mobile -->
+                    <div class="row">
+
+                        <!-- Text Section -->
+                        <div class="col s12 center-align left-align-on-med-and-up hero-content">
+                            <h5 class="flow-text black-text text-darken-6">Hi, I'm</h5>
+                            <h3 class="pink-text text-darken-4 hero-name">
+                                <strong>Shaik Malik Basha</strong>
+                            </h3>
+                            <h6 class="flow-text grey-text text-darken-2">
+                                Data Engineer | Building Scalable Data Platforms & Intelligent APIs
+                            </h6>
+                            <p class="flow-text black-text text-darken-6">
+                                I design and build <strong>scalable data pipelines</strong>,
+                                <strong>integrate ML models into APIs</strong>, and deploy
+                                <strong>cloud-native analytics systems</strong> using Azure and Databricks.
+                            </p>
+                            <p class="flow-text grey-text text-darken-2">
+                                I transform raw data into 
+                                <span id="animated-text" class="pink-text text-darken-4">&nbsp;</span>
+                            </p>
+
+                            <!-- CTA Buttons -->
+                            <div class="section">
+                                <a href="#projects" class="btn waves-effect waves-light pink darken-4">
+                                    <i class="material-icons left">visibility</i>View My Work
+                                </a>
+                                <!-- <a href="assets/docs/ShaikMalikBasha_DataEngineer_Resume_2025.pdf"
+                                    target="_blank"
+                                    class="btn waves-effect grey darken-4">
+                                    <i class="material-icons left">file_download</i>Resume
+                                </a> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
 
     <!--JavaScript at end of body for optimized loading-->
     <script type="text/javascript" src="js/materialize.min.js"></script>

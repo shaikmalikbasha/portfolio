@@ -9,9 +9,9 @@
 }
 
 /* ================= HEADER STYLES ================= */
-/* nav {
+nav {
   box-shadow: none;
-} */
+}
 
 .brand-logo {
   font-weight: 600;
@@ -35,4 +35,55 @@ nav ul li a {
 
 .sidenav a i {
   color: purple; /* Blue icon colour for mobile nav */
+}
+
+
+.background {
+  filter: blur(5px); /* Adjust the blur radius here */
+  /* border: 1px solid black; */
+}
+
+#hero-section {
+  /* background-image: url('../assets/blurred/office.png'); */
+  background-image: url('../assets/images/hospital.png');
+  
+  /* Prevents the image from tiling */
+  background-repeat: no-repeat;
+  
+  /* Centers the image within the container */
+  background-position: center center;
+  
+  /* Makes the image scale to cover the entire container */
+  background-size: cover;
+  
+  /* OPTIONAL: To make the image fixed as you scroll (Parallax effect) */
+  background-attachment: fixed;
+}
+
+/* ----------------
+  3. Content Styles for Readability (Crucial)
+---------------- */
+.hero-content {
+    /* Make the text centered and legible */
+    text-align: center;
+    color: black;
+    /* padding: 20px; */
+}
+
+/* 1. Default (Desktop/Larger Screen) Size */
+.hero-name {
+    /* Use the size you want for desktops */
+    font-size: 3.5rem; 
+}
+
+/* 2. Media Query for Mobile View */
+/* This CSS will only apply when the screen width is 600px or less */
+@media screen and (max-width: 600px) {
+    .hero-name {
+        /* Reduce the size for mobile screens */
+        font-size: 2.5rem; /* Change this value to fit your needs */
+    }
+    .logo-img {
+      margin-top: 3px;;
+    }
 }
