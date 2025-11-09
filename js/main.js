@@ -1,29 +1,37 @@
 // Initialize Materialize Components
-document.addEventListener('DOMContentLoaded', function() {
+function initMaterialize() {
   // Mobile sidenav initialisation
-  const elems = document.querySelectorAll('.sidenav');
-  M.Sidenav.init(elems, {
-    edge: 'left', // opens from right
+  const sideNaveElements = document.querySelectorAll(".sidenav");
+  const sideNaveOptions = {
+    edge: "left", // opens from left
     inDuration: 250,
-  });
-});
+  };
+  M.Sidenav.init(sideNaveElements, sideNaveOptions);
 
+  // Modal initialisation
+  const modalElems = document.querySelectorAll(".modal");
+  const modalOptions = {
+    opacity: 0.9,
+    inDuration: 300,
+  };
+  M.Modal.init(modalElems, modalOptions);
+}
 
-// ================= Typing / Rotating Text Animation =================
-document.addEventListener('DOMContentLoaded', function() {
+function animateText() {
+  // ================= Typing / Rotating Text Animation =================
   const phrases = [
-    'data-driven solutions',
-    'scalable data pipelines',
-    'intelligent APIs',
-    'cloud-native architectures',
-    'automated machine learning workflows',
-    'end-to-end analytics systems'
+    "data-driven solutions",
+    "scalable data pipelines",
+    "intelligent APIs",
+    "cloud-native architectures",
+    "automated machine learning workflows",
+    "end-to-end analytics systems",
   ];
 
-  const animatedText = document.getElementById('animated-text');
+  const animatedText = document.getElementById("animated-text");
   let phraseIndex = 0;
   let letterIndex = 0;
-  let currentPhrase = '';
+  let currentPhrase = "";
   let isDeleting = false;
 
   function typeEffect() {
@@ -50,4 +58,17 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   typeEffect();
+}
+
+function initAfterDOMLoad() {
+  initMaterialize();
+  animateText();
+}
+
+document.addEventListener("DOMContentLoaded", initAfterDOMLoad);
+
+// GitHub Calendar Initialization
+GitHubCalendar(".calendar", "malik-shaik-cos", {
+  responsive: true,
+  summary_text: "Contributions in the last year",
 });

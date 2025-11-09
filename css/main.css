@@ -1,11 +1,11 @@
 /* ================= LOGO IMAGE ================= */
 .logo-img {
-  height: 50px;      /* recommended height for good balance */
-  width: 50px;       /* keep square ratio */
+  height: 50px; /* recommended height for good balance */
+  width: 50px; /* keep square ratio */
   border-radius: 50%; /* optional – makes it circular */
-  object-fit: cover;  /* ensures proper cropping */
-  margin-top: 7px;    /* small vertical alignment fix */
-  margin-left: 12px;  /* spacing from left edge */
+  object-fit: cover; /* ensures proper cropping */
+  margin-top: 7px; /* small vertical alignment fix */
+  margin-left: 12px; /* spacing from left edge */
 }
 
 /* ================= HEADER STYLES ================= */
@@ -37,7 +37,6 @@ nav ul li a {
   color: purple; /* Blue icon colour for mobile nav */
 }
 
-
 .background {
   filter: blur(5px); /* Adjust the blur radius here */
   /* border: 1px solid black; */
@@ -45,17 +44,17 @@ nav ul li a {
 
 #hero-section {
   /* background-image: url('../assets/blurred/office.png'); */
-  background-image: url('../assets/images/hospital.png');
-  
+  background-image: url("../assets/images/hero-background.png");
+
   /* Prevents the image from tiling */
   background-repeat: no-repeat;
-  
+
   /* Centers the image within the container */
   background-position: center center;
-  
+
   /* Makes the image scale to cover the entire container */
   background-size: cover;
-  
+
   /* OPTIONAL: To make the image fixed as you scroll (Parallax effect) */
   background-attachment: fixed;
 }
@@ -64,26 +63,26 @@ nav ul li a {
   3. Content Styles for Readability (Crucial)
 ---------------- */
 .hero-content {
-    /* Make the text centered and legible */
-    text-align: center;
-    color: black;
-    /* padding: 20px; */
+  /* Make the text centered and legible */
+  text-align: center;
+  color: black;
+  /* padding: 20px; */
 }
 
 /* 1. Default (Desktop/Larger Screen) Size */
 .hero-name {
-    /* Use the size you want for desktops */
-    font-size: 3.5rem; 
+  /* Use the size you want for desktops */
+  font-size: 3.5rem;
 }
 
 /* 2. Media Query for Mobile View */
 /* This CSS will only apply when the screen width is 600px or less */
 @media screen and (max-width: 600px) {
-    .hero-name {
-        /* Reduce the size for mobile screens */
-        font-size: 2.5rem; /* Change this value to fit your needs */
-    }
-    .logo-img {
-      margin-top: 3px;;
-    }
+  .hero-name {
+    /* Reduce the size for mobile screens */
+    font-size: 2.5rem; /* Change this value to fit your needs */
+  }
+  .logo-img {
+    margin-top: 3px;
+  }
 }
