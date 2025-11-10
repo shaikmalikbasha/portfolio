@@ -42,7 +42,7 @@
                         <!-- Desktop Navigation -->
                         <ul class="right hide-on-med-and-down">
                             <li>
-                                <a href="#home"><i class="material-icons left">home</i>Home</a>
+                                <a href="#home-section"><i class="material-icons left">home</i>Home</a>
                             </li>
                             <li>
                                 <a href="#about"><i class="material-icons left">person</i>About</a>
@@ -91,7 +91,7 @@
                 </li>
 
                 <li>
-                    <a href="#home"><i class="material-icons left">home</i>Home</a>
+                    <a href="#home-section"><i class="material-icons left">home</i>Home</a>
                 </li>
                 <li>
                     <a href="#about"><i class="material-icons left">person</i>About</a>
@@ -120,7 +120,7 @@
     </div>
 
     <!-- ================= HERO SECTION ================= -->
-    <div class="hero-section">
+    <div id="home-section" class="hero-section">
         <section id="hero-section" class="section scrollspy white darken-1">
             <div class="container">
                 <!-- Row with centered content on mobile -->
@@ -162,7 +162,7 @@
     </div>
 
     <!-- ================= About Me SECTION ================= -->
-    <div class="container about-me" style="margin-top: 10px;">
+    <div class="container section">
         <section id="about" class="section scrollspy grey lighten-5">
             <div class="row">
 
@@ -263,8 +263,8 @@
     </div>
 
     <!-- ================= SKILLS SECTION ================= -->
-    <section id="skills" class="section scrollspy white">
-        <div class="container">
+    <div class="container section">
+        <section id="skills" class="section scrollspy white">
             <div class="row">
 
                 <!-- Section Heading -->
@@ -370,8 +370,94 @@
                 </div>
 
             </div>
-        </div>
-    </section>
+        </section>
+    </div>
+
+    <!-- ================= EXPERIENCE SECTION ================= -->
+    <div class="container section">
+        <section id="experience" class="section scrollspy grey lighten-5">
+            <div class="row">
+
+                <!-- Section Title -->
+                <div class="col s12 center-align">
+                    <h4 class="pink-text text-darken-4">
+                        <i class="material-icons left">work_outline</i>Experience
+                    </h4>
+                    <div class="divider pink darken-4"></div>
+                    <p class="flow-text grey-text text-darken-2">
+                        A journey of transforming data systems — from hands-on development to designing enterprise-scale
+                        data solutions.
+                    </p>
+                </div>
+
+                <!-- Timeline Starts -->
+                <div class="col s12">
+                    <ul class="collection">
+
+                        <!-- Role 1 -->
+                        <li class="collection-item avatar hoverable">
+                            <i class="material-icons circle pink darken-4">business_center</i>
+                            <span class="title pink-text text-darken-4"><strong>Member Software Engineer (Data
+                                    Engineer)</strong></span>
+                            <p class="grey-text text-darken-2">
+                                <strong><a href="https://www.costrategix.com/" target="_blank">Costrategix</a></strong>
+                                | Jun 2023 – Present
+                            </p>
+                            <ul class="grey-text text-darken-3">
+                                <li>Developed Flask APIs for anomaly detection across data signals such as Freshness,
+                                    Schema, Volume, and Distribution.</li>
+                                <li>Built an SQL AI Assistant with Azure OpenAI for automated query insights.</li>
+                                <li>Designed validation frameworks and dashboards using Datadog for real-time data
+                                    quality tracking.</li>
+                                <li>Managed Snowflake roles via Terraform to enhance security and governance.</li>
+                                <li>Conducted a Microsoft Fabric POC for cost optimisation and pipeline scalability.
+                                </li>
+                            </ul>
+                        </li>
+
+                        <!-- Role 2 -->
+                        <li class="collection-item avatar hoverable">
+                            <i class="material-icons circle pink darken-4">timeline</i>
+                            <span class="title pink-text text-darken-4"><strong>Associate Software Engineer (Data
+                                    Engineer)</strong></span>
+                            <p class="grey-text text-darken-2">
+                                <strong><a href="https://www.costrategix.com/" target="_blank">Costrategix</a></strong>
+                                | Nov 2021 – May 2022
+                            </p>
+                            <ul class="grey-text text-darken-3">
+                                <li>Built modular pipelines in Azure Data Factory using the Medallion Architecture for
+                                    Snowflake integration.</li>
+                                <li>Implemented data validation with Azure Functions to ensure consistency and accuracy.
+                                </li>
+                                <li>Developed Databricks workflows for brand matching and image quality analysis using
+                                    Azure Cognitive Vision.</li>
+                            </ul>
+                        </li>
+
+                        <!-- Role 3 -->
+                        <li class="collection-item avatar hoverable">
+                            <i class="material-icons circle pink darken-4">school</i>
+                            <span class="title pink-text text-darken-4"><strong>Trainee Software
+                                    Engineer</strong></span>
+                            <p class="grey-text text-darken-2">
+                                <strong><a href="https://www.costrategix.com/" target="_blank">Costrategix</a></strong>
+                                | Nov 2019 – Oct 2020
+                            </p>
+                            <ul class="grey-text text-darken-3">
+                                <li>Automated USDA data ingestion using Azure Functions and stored results in SQL
+                                    Server.</li>
+                                <li>Built Dockerised Flask APIs for ML model inference and product-matching predictions.
+                                </li>
+                                <li>Enhanced e-commerce features by optimising filters and thumbnails for improved user
+                                    experience.</li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
 
 
     <!-- ================= GitHub Contribution ================= -->
@@ -420,7 +506,7 @@
                         <h5 class="white-text">Links</h5>
                         <ul>
                             <li>
-                                <a class="grey-text text-lighten-3" href="#home">
+                                <a class="grey-text text-lighten-3" href="#home-section">
                                     <i class="material-icons left">home</i>Home
                                 </a>
                             </li>

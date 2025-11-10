@@ -8,6 +8,10 @@
   margin-left: 12px; /* spacing from left edge */
 }
 
+div.section {
+  margin-top: 10px;
+}
+
 /* ================= HEADER STYLES ================= */
 nav {
   box-shadow: none;
