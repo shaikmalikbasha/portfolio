@@ -8,8 +8,12 @@
   margin-left: 12px; /* spacing from left edge */
 }
 
-div.section {
-  margin-top: 10px;
+#home-section,
+#about,
+#skills,
+#experience,
+#projects {
+  scroll-margin-top: 80px;
 }
 
 /* ================= HEADER STYLES ================= */
