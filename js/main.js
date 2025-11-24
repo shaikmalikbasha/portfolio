@@ -3,7 +3,7 @@ function initMaterialize() {
   // Mobile sidenav initialisation
   const sideNaveElements = document.querySelectorAll(".sidenav");
   const sideNaveOptions = {
-    edge: "left", // opens from left
+    edge: "right", // opens from right
     inDuration: 250,
   };
   M.Sidenav.init(sideNaveElements, sideNaveOptions);
