@@ -15,6 +15,40 @@ function initMaterialize() {
     inDuration: 300,
   };
   M.Modal.init(modalElems, modalOptions);
+
+  // Tabs initialisation
+  const tabElems = document.querySelectorAll(".tabs");
+  const tabOptions = {
+    swipeable: true,
+    duration: 200,
+  };
+  M.Tabs.init(tabElems, tabOptions);
+
+  // Carousel initialisation
+  var carouselElems = document.querySelectorAll(".carousel");
+  const carouselOptions = {
+    indicators: true,
+    duration: 200,
+  };
+
+  carouselInstances = M.Carousel.init(carouselElems, carouselOptions);
+
+  // Auto rotate
+  setInterval(() => {
+    instances[0].next();
+  }, 3000);
+
+  let autoRotate = setInterval(() => instance.next(), 3000);
+
+  // Pause on hover
+  elem.addEventListener("mouseenter", () => {
+    clearInterval(autoRotate);
+  });
+
+  // Resume on leave
+  elem.addEventListener("mouseleave", () => {
+    autoRotate = setInterval(() => instance.next(), 3000);
+  });
 }
 
 function animateText() {
