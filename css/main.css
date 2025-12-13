@@ -82,6 +82,15 @@ nav ul li a {
 .hero-name {
   /* Use the size you want for desktops */
   font-size: 3.5rem;
+  /* font-family: Georgia, "Times New Roman", Times, serif; */
+}
+
+.project-title {
+  font-weight: bold;
+}
+
+.tagline {
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
 }
 
 /* 2. Media Query for Mobile View */
