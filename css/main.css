@@ -90,7 +90,13 @@ nav ul li a {
 }
 
 .tagline {
-  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  font-family: "Comic Sans MS", "Comic Sans";
+}
+
+.project-img {
+  width: 400px;
+  height: 250px;
+  object-fit: cover;
 }
 
 /* 2. Media Query for Mobile View */
