@@ -54,12 +54,12 @@ function initMaterialize() {
 
 function animateText() {
   const phrases = [
-    "data-driven solutions",
-    "scalable data pipelines",
-    "intelligent APIs",
-    "cloud-native architectures",
-    "automated machine learning workflows",
-    "end-to-end analytics systems",
+    "data-driven solutions!",
+    "scalable data pipelines!",
+    "intelligent APIs!",
+    "cloud-native architectures!",
+    "automated ML workflows!",
+    "end-to-end analytics systems!",
   ];
 
   const animatedText = document.getElementById("animated-text");

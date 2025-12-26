@@ -68,6 +68,10 @@ nav ul li a {
   background-attachment: fixed;
 }
 
+.hero-section {
+  padding: 5px;
+}
+
 /* ----------------
   3. Content Styles for Readability (Crucial)
 ---------------- */
@@ -99,6 +103,10 @@ nav ul li a {
   object-fit: cover;
 }
 
+.flow-text-animated {
+  font-size: 30px;
+}
+
 /* 2. Media Query for Mobile View */
 /* This CSS will only apply when the screen width is 600px or less */
 @media screen and (max-width: 600px) {
@@ -108,5 +116,8 @@ nav ul li a {
   }
   .logo-img {
     margin-top: 3px;
+  }
+  .flow-text-animated {
+    font-size: 12px;
   }
 }
