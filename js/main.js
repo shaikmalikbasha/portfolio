@@ -93,9 +93,29 @@ function animateText() {
   typeEffect();
 }
 
+function goToTop() {
+  const goTopBtn = document.getElementById("goTopBtn");
+
+  window.addEventListener("scroll", function () {
+    if (window.scrollY > 300) {
+      goTopBtn.classList.add("show");
+    } else {
+      goTopBtn.classList.remove("show");
+    }
+  });
+
+  goTopBtn.addEventListener("click", function () {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  });
+}
+
 function initAfterDOMLoad() {
   initMaterialize();
   animateText();
+  goToTop();
 }
 
 document.addEventListener("DOMContentLoaded", initAfterDOMLoad);
