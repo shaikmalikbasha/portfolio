@@ -1,1139 +1,1056 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" data-theme="light">
 
 <head>
-    <!-- ================= BASIC METADATA ================= -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Shaik Malik Basha | Data Engineer Portfolio</title>
+    <title>Shaik Malik Basha | Data & AI Engineer</title>
 
     <meta name="description"
-        content="Portfolio of Shaik Malik Basha, a Data Engineer with 6+ years of experience in building scalable data pipelines, cloud platforms, ETL workflows, automation, and analytics solutions across Azure, Databricks, and Snowflake." />
+        content="Portfolio of Shaik Malik Basha, a Principal Data & AI Engineer with 6+ years building scalable real-time data platforms, AI-integrated APIs, and cloud-native analytics on Azure, Databricks, and Snowflake." />
     <meta name="keywords"
-        content="Data Engineer, Azure Data Engineer, Databricks, Snowflake, ETL Developer, Data Pipelines, Azure, Python Developer, Big Data Engineer, Cloud Data Engineer, SQL Developer, Airflow, Kafka, Spark" />
+        content="Data Engineer, AI Engineer, Azure Data Engineer, Databricks, Snowflake, ETL, LangChain, Azure OpenAI, LLM, RAG, FastAPI, Flask, PySpark, Delta Lake, Microsoft Fabric, Azure Event Hub, Principal Engineer, SQLAlchemy, Terraform" />
     <meta name="author" content="Shaik Malik Basha" />
 
-    <!-- ================= OPEN GRAPH (SOCIAL MEDIA PREVIEW) ================= -->
-    <meta property="og:title" content="Shaik Malik Basha | Data Engineer Portfolio" />
+    <!-- Open Graph -->
+    <meta property="og:title" content="Shaik Malik Basha | Data & AI Engineer" />
     <meta property="og:description"
-        content="Explore the work of Data Engineer Shaik Malik Basha — expert in data pipelines, cloud data platforms, automation, and modern analytics engineering." />
+        content="Principal Data & AI Engineer — real-time pipelines, AI-integrated APIs, cloud-native analytics on Azure, Databricks & Snowflake." />
     <meta property="og:image" content="assets/images/preview.png" />
-    <meta property="og:url" content="https://shaikmalikbasha.com" />
+    <meta property="og:url" content="https://shaikmalikbasha.github.io/portfolio/" />
     <meta property="og:type" content="website" />
 
-    <!-- ================= TWITTER CARD ================= -->
+    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Shaik Malik Basha | Data Engineer Portfolio" />
+    <meta name="twitter:title" content="Shaik Malik Basha | Data & AI Engineer" />
     <meta name="twitter:description"
-        content="Data Engineer Portfolio showcasing scalable pipelines, cloud platforms, automation, and analytics engineering." />
+        content="Principal Data & AI Engineer — real-time pipelines, AI-integrated APIs, cloud-native analytics on Azure, Databricks & Snowflake." />
     <meta name="twitter:image" content="assets/images/preview.png" />
 
-    <!--Import Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-
-    <!-- Font Awesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-    <!--Let browser know website is optimized for mobile-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Favicons -->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png" />
     <link rel="manifest" href="assets/favicons/site.webmanifest" />
 
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
-    <!--Import materialize.css-->
+    <!-- Materialize CSS -->
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/main.css" />
 
-    <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
-
-    <!-- ================= STRUCTURED DATA / SCHEMA.ORG ================= -->
+    <!-- Schema.org -->
     <script type="application/ld+json">
-        {
-            "@context": "https://schema.org/",
-            "@type": "Person",
-            "name": "Shaik Malik Basha",
-            "url": "https://shaikmalikbasha.github.io/portfolio/index.html",
-            "image": "./assets/images/malik-shaik-icon.png",
-            "jobTitle": "Data Engineer",
-            "sameAs": [
-                "https://www.linkedin.com/in/shaik-malik-basha-2b4367167",
-                "https://github.com/shaikmalikbasha"
-            ],
-            "address": {
-                "@type": "PostalAddress",
-                "addressLocality": "Kurnool",
-                "addressRegion": "Andhra Pradesh",
-                "addressCountry": "India"
-            },
-            "description": "Data Engineer with 6+ years of experience in building scalable data pipelines, cloud platforms, ETL workflows, automation, and analytics solutions across Azure, Snowflake, and Databricks.",
-            "knowsAbout": [
-                "Data Engineering",
-                "Azure",
-                "Databricks",
-                "Azure Data Factory",
-                "Microsoft Fabric",
-                "Snowflake",
-                "ETL Pipelines",
-                "Data Quality Automation",
-                "Python",
-                "LangChain",
-                "Flask",
-                "FastAPI",
-                "Sanic",
-                "GraphQL",
-                "SwaggerUI",
-                "SQL",
-                "Kafka",
-                "Airflow",
-                "Terraform",
-                "Cloud Data Platforms"
-            ]
-        }
+    {
+        "@context": "https://schema.org/",
+        "@type": "Person",
+        "name": "Shaik Malik Basha",
+        "url": "https://shaikmalikbasha.github.io/portfolio/",
+        "image": "./assets/images/malik-shaik-icon.png",
+        "jobTitle": "Principal Data & AI Engineer",
+        "telephone": "+91-8886114113",
+        "email": "shaikmalikbasha1998@gmail.com",
+        "sameAs": [
+            "https://www.linkedin.com/in/shaik-malik-basha-2b4367167",
+            "https://github.com/shaikmalikbasha"
+        ],
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Kurnool",
+            "addressRegion": "Andhra Pradesh",
+            "addressCountry": "India"
+        },
+        "description": "Principal Data & AI Engineer with 6+ years designing real-time data platforms, AI-integrated APIs, and cloud-native analytics on Azure, Databricks, and Snowflake.",
+        "knowsAbout": [
+            "Data Engineering", "AI Engineering", "Azure Databricks", "Azure Data Factory",
+            "Microsoft Fabric", "Snowflake", "ETL/ELT Pipelines", "Medallion Architecture",
+            "Delta Tables", "Azure Event Hub", "LangChain", "Azure OpenAI", "RAG Pipelines",
+            "LLMs", "FastAPI", "Flask", "SQLAlchemy", "PySpark", "Python", "Terraform",
+            "Docker", "GitHub Actions", "Datadog"
+        ]
+    }
     </script>
 </head>
 
 <body>
-    <!-- ================= HEADER / NAVBAR ================= -->
-    <div class="header-section">
-        <header>
-            <!-- Fixed Navbar -->
-            <div class="navbar-fixed">
-                <nav class="pink darken-4">
-                    <div class="nav-wrapper container">
-                        <!-- Brand / Logo -->
-                        <a href="index.html" class="brand-logo">
-                            <img src="assets/images/malik-shaik-icon.png" alt="Shaik Malik Basha" class="logo-img" />
-                        </a>
-                        <ul class="left hide-on-med-and-down" style="margin-left: 70px;">
-                            <li>
-                                <a href="#home-section">Malik | Data Engineer</a>
-                            </li>
-                        </ul>
 
-                        <!-- Mobile Menu Trigger -->
-                        <a href="#" data-target="mobile-nav" class="sidenav-trigger left">
-                            <i class="material-icons">menu</i>
-                        </a>
-
-                        <!-- Desktop Navigation -->
-                        <ul class="right hide-on-med-and-down">
-                            <li>
-                                <a href="#home-section"><i class="material-icons left">home</i>Home</a>
-                            </li>
-                            <li>
-                                <a href="#about"><i class="material-icons left">person</i>About</a>
-                            </li>
-                            <li>
-                                <a href="#skills"><i class="material-icons left">build</i>Skills</a>
-                            </li>
-                            <li>
-                                <a href="#experience"><i class="material-icons left">work</i>Experience</a>
-                            </li>
-                            <li>
-                                <a href="#projects"><i class="material-icons left">folder</i>Projects</a>
-                            </li>
-                            <li>
-                                <a href="#certifications"><i class="material-icons left">stars</i>Certifications</a>
-                            </li>
-                            <!-- <li>
-                                <a href="#resume-modal"
-                                    class="btn waves-effect waves-light grey darken-4 modal-trigger">
-                                    <i class="material-icons left">file_download</i>Resume
-                                </a>
-                            </li> -->
-                        </ul>
-                    </div>
-                </nav>
-            </div>
-
-            <!-- Start: Mobile Side Navigation -->
-            <ul class="sidenav" id="mobile-nav">
-                <li>
-                    <div class="user-view">
-                        <div class="background">
-                            <img class="responsive-img" src="assets/images/user_bg.jpg" />
-                        </div>
-                        <a href="#user"><img class="circle" src="assets/images/malik-shaik-icon.png" /></a>
-                        <a href="#name"><span class="white-text bold name">Shaik Malik Basha</span></a>
-                        <a href="#email"><span class="white-text bold email">shaikmalikbasha1998@example.com</span></a>
-                    </div>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/in/shaik-malik-basha-2b4367167" target="_blank"
-                        class="pink-text text-darken-4">
-                        <i class="material-icons pink-text text-darken-4">link</i>
-                        <strong>LinkedIn</strong>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://github.com/shaikmalikbasha" target="_blank" class="pink-text text-darken-4">
-                        <i class="material-icons pink-text text-darken-4">code</i>
-                        <strong>GitHub</strong>
-                    </a>
-                </li>
-                <li><a href="#!">Services</a></li>
-                <li>
-                    <div class="divider"></div>
-                </li>
-
-                <li>
-                    <a href="#home-section" class="sidenav-close pink-text text-darken-4"><i
-                            class="material-icons left pink-text text-darken-4">home</i>Home</a>
-                </li>
-                <li>
-                    <a href="#about" class="sidenav-close pink-text text-darken-4"><i
-                            class="material-icons left pink-text text-darken-4">person</i>About</a>
-                </li>
-                <li>
-                    <a href="#skills" class="sidenav-close pink-text text-darken-4"><i
-                            class="material-icons left pink-text text-darken-4">build</i>Skills</a>
-                </li>
-                <li>
-                    <a href="#experience" class="sidenav-close pink-text text-darken-4"><i
-                            class="material-icons left pink-text text-darken-4">work</i>Experience</a>
-                </li>
-                <li>
-                    <a href="#projects" class="sidenav-close pink-text text-darken-4"><i
-                            class="material-icons left pink-text text-darken-4">folder</i>Projects</a>
-                </li>
-                <li>
-                    <a href="#certifications" class="sidenav-close pink-text text-darken-4"><i
-                            class="material-icons left pink-text text-darken-4">stars</i>Certifications</a>
-                </li>
-            </ul>
-            <!-- END: Mobile Side Navigation -->
-        </header>
-    </div>
-
-    <!-- ================= HERO SECTION ================= -->
-    <div id="home-section" class="hero-section">
-        <section id="hero-section" class="section scrollspy white darken-1">
-            <div class="container">
-                <!-- Row with centered content on mobile -->
-                <div class="row">
-                    <!-- Text Section -->
-                    <div class="col s12 center-align left-align-on-med-and-up hero-content">
-                        <h5 class="flow-text black-text text-darken-6">Hi, I'm</h5>
-                        <h3 class="pink-text text-darken-4 hero-name">
-                            <strong>Shaik Malik Basha</strong>
-                        </h3>
-                        <h6 class="flow-text grey-text text-darken-2 tagline">
-                            Data Engineer | Building Scalable Data Platforms & Intelligent APIs
-                        </h6>
-                        <p class="flow-text black-text text-darken-6">
-                            I design and build <strong>scalable data pipelines</strong>,
-                            <strong>integrate ML models into APIs</strong>, and deploy
-                            <strong>cloud-native analytics systems</strong> using Azure and
-                            Databricks.
-                        </p>
-                        <p class="flow-text grey-text text-darken-2 flow-text-animated">
-                            I transform raw data into
-                            <span id="animated-text" class="pink-text text-darken-4">&nbsp;</span>
-                        </p>
-
-                        <!-- CTA Buttons -->
-                        <!-- <div class="section">
-                            <a href="#resume-modal" class="btn waves-effect waves-light pink darken-4 modal-trigger">
-                                <i class="material-icons left">visibility</i>Resume
-                            </a>
-                            <a href="assets/docs/ShaikMalikBasha_DataEngineer_Resume_2025.pdf" target="_blank"
-                                class="btn waves-effect grey darken-4">
-                                <i class="material-icons left">file_download</i>Resume
-                            </a>
-                        </div> -->
-                    </div>
-                </div>
-            </div>
-        </section>
-    </div>
-
-    <!-- ================= About Me SECTION ================= -->
-    <div class="container section">
-        <section id="about" class="section scrollspy grey lighten-5">
-            <div class="row">
-
-                <!-- Section Heading -->
-                <div class="col s12 center-align">
-                    <h4 class="pink-text text-darken-4">
-                        <i class="material-icons left">person_outline</i>About Me
-                    </h4>
-                    <div class="divider pink darken-4"></div>
-                    <p class="grey-text text-darken-1 flow-text">
-                        Passionate about building reliable data ecosystems that empower businesses to make smarter,
-                        faster decisions.
-                    </p>
-                </div>
-
-                <!-- Main Content -->
-                <div class="col s12 m7">
-                    <div class="card white z-depth-1 hoverable">
-                        <div class="card-content grey-text text-darken-3">
-                            <span class="card-title pink-text text-darken-4">
-                                <i class="material-icons left">work</i>Professional Journey
-                            </span>
-                            <p>
-                                I’m a results-driven <strong>Data Engineer</strong> with over
-                                <strong>6 years of experience</strong> designing, developing, and optimising
-                                data pipelines across <strong>Azure, Databricks, and Snowflake</strong> ecosystems.
-                            </p>
-                            <br>
-                            <p>
-                                I specialise in transforming raw datasets into actionable insights through
-                                <strong>ETL automation, cloud-native architectures,</strong> and
-                                <strong>infrastructure as code</strong> using Terraform and CI/CD pipelines.
-                            </p>
-                            <br>
-                            <p>
-                                Currently exploring ways to merge <strong>AI and data engineering</strong>
-                                to build self-healing, intelligent data systems.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Quick Info Card -->
-                <div class="col s12 m5">
-                    <div class="card pink lighten-5 z-depth-1 hoverable">
-                        <div class="card-content">
-                            <span class="card-title pink-text text-darken-4">
-                                <i class="material-icons left">info_outline</i>Quick Facts
-                            </span>
-                            <ul class="collection">
-                                <li class="collection-item">
-                                    <i class="material-icons left pink-text text-darken-4">event</i>
-                                    <strong>Experience:</strong> 6+ Years
-                                </li>
-                                <li class="collection-item">
-                                    <i class="material-icons left pink-text text-darken-4">location_on</i>
-                                    <strong>Based in:</strong> Kurnool, Andhra Pradesh, India
-                                </li>
-                                <li class="collection-item">
-                                    <i class="material-icons left pink-text text-darken-4">email</i>
-                                    <strong>Email:</strong>
-                                    <a href="mailto:shaikmalikbasha1998@example.com" class="pink-text text-darken-4">
-                                        shaikmalikbasha1998@example.com
-                                    </a>
-                                </li>
-                                <li class="collection-item">
-                                    <i class="material-icons left pink-text text-darken-4">link</i>
-                                    <strong>LinkedIn:</strong>
-                                    <a href="https://www.linkedin.com/in/shaik-malik-basha-2b4367167" target="_blank"
-                                        class="pink-text text-darken-4">
-                                        /shaik-malik-basha
-                                    </a>
-                                </li>
-                                <li class="collection-item">
-                                    <i class="material-icons left pink-text text-darken-4">code</i>
-                                    <strong>GitHub:</strong>
-                                    <a href="https://github.com/shaikmalikbasha" target="_blank"
-                                        class="pink-text text-darken-4">
-                                        /shaikmalikbasha
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Inspirational Quote -->
-                <div class="col s12 center-align">
-                    <i class="material-icons small pink-text text-darken-4">format_quote</i>
-                    <p class="flow-text grey-text text-darken-2">
-                        “Driven by curiosity and precision — I create data systems that inspire confidence in every
-                        insight.”
-                    </p>
-                </div>
-
-            </div>
-        </section>
-    </div>
-
-    <!-- ================= SKILLS SECTION ================= -->
-    <div class="container section">
-        <section id="skills" class="section scrollspy white">
-            <div class="row">
-
-                <!-- Section Heading -->
-                <div class="col s12 center-align">
-                    <h4 class="pink-text text-darken-4">
-                        <i class="material-icons left">build_circle</i>Technical Skills
-                    </h4>
-                    <div class="divider pink darken-4"></div>
-                    <p class="flow-text grey-text text-darken-2">
-                        A blend of data engineering, cloud technologies, and automation tools that power scalable data
-                        systems.
-                    </p>
-                </div>
-
-                <!-- Programming Languages -->
-                <div class="col s12 m6 l4">
-                    <div class="card hoverable">
-                        <div class="card-content">
-                            <span class="card-title pink-text text-darken-4">
-                                <i class="material-icons left">code</i>Programming
-                            </span>
-                            <p>Python, SQL, JavaScript, PHP</p>
-                            <div class="progress pink lighten-4">
-                                <div class="determinate pink darken-4" style="width: 95%"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Frameworks & APIs -->
-                <div class="col s12 m6 l4">
-                    <div class="card hoverable">
-                        <div class="card-content">
-                            <span class="card-title pink-text text-darken-4">
-                                <i class="material-icons left">api</i>Frameworks & APIs
-                            </span>
-                            <p>Lang Chain, Flask, FastAPI, Sanic, GraphQL, Az Functions</p>
-                            <div class="progress pink lighten-4">
-                                <div class="determinate pink darken-4" style="width: 85%"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Databases -->
-                <div class="col s12 m6 l4">
-                    <div class="card hoverable">
-                        <div class="card-content">
-                            <span class="card-title pink-text text-darken-4">
-                                <i class="material-icons left">dns</i>Databases
-                            </span>
-                            <p>Snowflake, All SQL Databases, Delta Tables, NoSQL</p>
-                            <div class="progress pink lighten-4">
-                                <div class="determinate pink darken-4" style="width: 92%"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Data Tools -->
-                <div class="col s12 m6 l4">
-                    <div class="card hoverable">
-                        <div class="card-content">
-                            <span class="card-title pink-text text-darken-4">
-                                <i class="material-icons left">storage</i>Data Tools
-                            </span>
-                            <p>Databricks, ADF, MS Fabric, Snowflake</p>
-                            <div class="progress pink lighten-4">
-                                <div class="determinate pink darken-4" style="width: 90%"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- DevOps & Infrastructure -->
-                <div class="col s12 m6 l4">
-                    <div class="card hoverable">
-                        <div class="card-content">
-                            <span class="card-title pink-text text-darken-4">
-                                <i class="material-icons left">terminal</i>DevOps & Infra
-                            </span>
-                            <p>Docker, Terraform, Azure DevOps, CI/CD</p>
-                            <div class="progress pink lighten-4">
-                                <div class="determinate pink darken-4" style="width: 75%"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Cloud Platforms -->
-                <div class="col s12 m6 l4">
-                    <div class="card hoverable">
-                        <div class="card-content">
-                            <span class="card-title pink-text text-darken-4">
-                                <i class="material-icons left">cloud</i>Cloud Platforms
-                            </span>
-                            <p>Azure, AWS, GCP</p>
-                            <div class="progress pink lighten-4">
-                                <div class="determinate pink darken-4" style="width: 68%"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-    </div>
-
-    <!-- ================= EXPERIENCE SECTION ================= -->
-    <div class="container section">
-        <section id="experience" class="section scrollspy grey lighten-5">
-            <div class="row">
-
-                <!-- Section Title -->
-                <div class="col s12 center-align">
-                    <h4 class="pink-text text-darken-4">
-                        <i class="material-icons left">work_outline</i>Experience
-                    </h4>
-                    <div class="divider pink darken-4"></div>
-                    <p class="flow-text grey-text text-darken-2">
-                        A journey of transforming data systems — from hands-on development to designing enterprise-scale
-                        data solutions.
-                    </p>
-                </div>
-                <div class="col s12">
-                    <ul class="collection">
-
-                        <!-- Principal Software Engineer -->
-                        <li class="collection-item avatar hoverable">
-                            <i class="material-icons circle pink darken-4">emoji_events</i>
-                            <span class="title pink-text text-darken-4"><strong>Principal Software Engineer (Data
-                                    Engineer)</strong></span>
-                            <p class="grey-text text-darken-2">
-                                <strong><a href="https://www.costrategix.com/" target="_blank">Costrategix</a></strong>
-                                | Mar 2025 – Present
-                            </p>
-                            <ul class="grey-text text-darken-3">
-                                <li><i class="material-icons tiny pink-text text-darken-4">done</i> Designed
-                                    <strong>data
-                                        pipelines</strong> moving Azure Event Hub data to Gold layer with normalization
-                                    and
-                                    batch-wise metadata.
-                                </li>
-                                <li><i class="material-icons tiny pink-text text-darken-4">done</i> Developed a
-                                    <strong>validation framework</strong> using SQL queries for functional & quality
-                                    checks.
-                                </li>
-                                <li><i class="material-icons tiny pink-text text-darken-4">done</i> Built
-                                    <strong>monitoring
-                                        dashboards</strong> in Datadog for real-time data observability.
-                                </li>
-                                <li><strong>Tech Stack:</strong> Azure Databricks, Azure Event Hub, Azure Data Lake
-                                    Storage Gen2,
-                                    GitHub Actions, Datadog</li>
-                            </ul>
-                        </li>
-
-                        <!-- Member Software Engineer -->
-                        <li class="collection-item avatar hoverable">
-                            <i class="material-icons circle pink darken-4">analytics</i>
-                            <span class="title pink-text text-darken-4"><strong>Member Software Engineer (Data
-                                    Engineer)</strong></span>
-                            <p class="grey-text text-darken-2">
-                                <strong><a href="https://www.costrategix.com/" target="_blank">Costrategix</a></strong>
-                                | Jun 2023 – Mar 2025
-                            </p>
-                            <ul class="grey-text text-darken-3">
-                                <li><i class="material-icons tiny pink-text text-darken-4">done</i> Built <strong>Flask
-                                        APIs</strong>
-                                    to interface with ML models for anomaly detection (Freshness, Schema, Volume,
-                                    Distribution).</li>
-                                <li><i class="material-icons tiny pink-text text-darken-4">done</i> Developed
-                                    <strong>SQL AI
-                                        Assistant</strong> with Azure OpenAI for automated insights & anomaly tagging.
-                                </li>
-                                <li><i class="material-icons tiny pink-text text-darken-4">done</i> Managed
-                                    <strong>Snowflake
-                                        roles</strong> via Terraform to improve security & governance.
-                                </li>
-                                <li><i class="material-icons tiny pink-text text-darken-4">done</i> Conducted
-                                    <strong>Microsoft Fabric POC</strong> for cost optimization and pipeline
-                                    scalability.
-                                </li>
-
-                                <li><strong>Tech Stack:</strong> Flask-RestX, Docker, PostgreSQL, SQLAlchemy, Azure
-                                    OpenAI, Terraform,
-                                    Snowflake, Azure DevOps</li>
-                            </ul>
-                        </li>
-
-                        <!-- Associate Software Engineer -->
-                        <li class="collection-item avatar hoverable">
-                            <i class="material-icons circle pink darken-4">data_usage</i>
-                            <span class="title pink-text text-darken-4"><strong>Associate Software Engineer (Data
-                                    Engineer)</strong></span>
-                            <p class="grey-text text-darken-2">
-                                <strong><a href="https://www.costrategix.com/" target="_blank">Costrategix</a></strong>
-                                | Apr 2021 – Jun 2022
-                            </p>
-                            <ul class="grey-text text-darken-3">
-                                <li><i class="material-icons tiny pink-text text-darken-4">done</i> Built
-                                    <strong>modular
-                                        pipelines</strong> in Azure Data Factory using Medallion Architecture to process
-                                    multi-source data into Snowflake.
-                                </li>
-                                <li><i class="material-icons tiny pink-text text-darken-4">done</i> Implemented
-                                    <strong>batch
-                                        validation checks</strong> with Azure Functions ensuring <strong>data quality
-                                        and consistency</strong>.
-                                </li>
-                                <li><i class="material-icons tiny pink-text text-darken-4">done</i> Developed
-                                    <strong>Databricks workflows</strong> for brand matching and image quality analysis
-                                    using Azure
-                                    Cognitive Vision.
-                                </li>
-                                <li><strong>Tech Stack:</strong> Azure Data Factory, Azure Functions (Python & Java),
-                                    Databricks,
-                                    Snowflake, Azure Data Lake Storage Gen2, Azure Cognitive Vision</li>
-                            </ul>
-                        </li>
-
-                        <!-- Trainee Software Engineer -->
-                        <li class="collection-item avatar hoverable">
-                            <i class="material-icons circle pink darken-4">school</i>
-                            <span class="title pink-text text-darken-4"><strong>Trainee Software
-                                    Engineer</strong></span>
-                            <p class="grey-text text-darken-2">
-                                <strong><a href="https://www.costrategix.com/" target="_blank">Costrategix</a></strong>
-                                | Sep 2019 – Apr 2021
-                            </p>
-                            <ul class="grey-text text-darken-3">
-                                <li><i class="material-icons tiny pink-text text-darken-4">done</i> Supported
-                                    <strong>e-commerce platform</strong> by resolving tickets & adding
-                                    filters/thumbnails to product
-                                    pages.
-                                </li>
-                                <li><i class="material-icons tiny pink-text text-darken-4">done</i> Built
-                                    <strong>Dockerized
-                                        Flask APIs</strong> for ML model inference and product matching predictions.
-                                </li>
-                                <li><i class="material-icons tiny pink-text text-darken-4">done</i> Refactored code
-                                    following <strong>best practices</strong> to improve maintainability.</li>
-                                <li><strong>Tech Stack:</strong> PHP, MySQL, Zend Framework, Azure Functions (Python),
-                                    Flask, Docker,
-                                    Microsoft SQL Server, Terraform</li>
-                            </ul>
-                        </li>
-
-                    </ul>
-                </div>
-
-            </div>
-        </section>
-    </div>
-
-    <!-- ================= PROJECTS SECTION ================= -->
-    <div class="container">
-        <section id="projects" class="section scrollspy white">
-            <div class="row">
-
-                <!-- Section Heading -->
-                <div class="col s12 center-align">
-                    <h4 class="pink-text text-darken-4">
-                        <i class="material-icons left">folder_open</i>Projects & Case Studies
-                    </h4>
-                    <div class="divider pink darken-4"></div>
-                    <p class="flow-text grey-text text-darken-2">
-                        A glimpse into some of the real-world data engineering projects I've designed and delivered —
-                        blending scalability, automation, and cloud innovation.
-                    </p>
-                </div>
-
-                <!-- Project 1: QGrid - QIntel -->
-                <div class="col s12 m6 l4">
-                    <div class="card hoverable">
-                        <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator project-img" src="assets/images/qgrid.png"
-                                alt="QGrid - QIntel Project">
-                        </div>
-                        <div class="card-content">
-                            <span class="card-title activator pink-text text-darken-4 project-title">
-                                QGrid – QIntel<i class="material-icons right">more_vert</i>
-                            </span>
-                            <p>ML-driven anomaly detection platform with AI-assisted SQL insights.</p>
-                        </div>
-                        <div class="card-reveal">
-                            <span class="card-title pink-text text-darken-4 project-title">
-                                QGrid – QIntel<i class="material-icons right">close</i>
-                            </span>
-                            <p>
-                                Built Flask-based microservices to interface with ML models for detecting anomalies
-                                across
-                                data signals such as Freshness, Schema, Volume, and Distribution.
-                                Designed a SQL AI Assistant using Azure OpenAI to generate insights, group anomalies,
-                                and apply descriptive tagging for faster root-cause analysis.
-                            </p>
-                            <p><strong>Tech Stack:</strong> Flask-RestX, Docker, PostgreSQL, Azure OpenAI, Databricks,
-                                Snowflake, Terraform, Datadog</p>
-                            <a href="https://github.com/shaikmalikbasha" target="_blank"
-                                class="btn-small pink darken-4 waves-effect">
-                                <i class="material-icons left">code</i>View on GitHub
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 2: Empower Data Cloud -->
-                <div class="col s12 m6 l4">
-                    <div class="card hoverable">
-                        <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator project-img" src="assets/images/edc.png" alt="Empower Data Cloud">
-                        </div>
-                        <div class="card-content">
-                            <span class="card-title activator pink-text text-darken-4 project-title">
-                                Empower Data Cloud<i class="material-icons right">more_vert</i>
-                            </span>
-                            <p>Enterprise-grade data platform using Medallion Architecture.</p>
-                        </div>
-                        <div class="card-reveal">
-                            <span class="card-title pink-text text-darken-4 project-title">
-                                Empower Data Cloud<i class="material-icons right">close</i>
-                            </span>
-                            <p>
-                                Designed modular and scalable Azure Data Factory pipelines to ingest and transform
-                                multi-source enterprise data into Snowflake using Bronze–Silver–Gold layers.
-                                Implemented batch validation checks with Azure Functions to ensure data quality,
-                                consistency, and reliability.
-                            </p>
-                            <p><strong>Tech Stack:</strong> Azure Data Factory, Azure Functions (Python),
-                                Snowflake, Azure Data Lake Storage Gen2</p>
-                            <a href="https://github.com/shaikmalikbasha" target="_blank"
-                                class="btn-small pink darken-4 waves-effect">
-                                <i class="material-icons left">code</i>View on GitHub
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 3: Kroger - Brand Matching & Image Processing -->
-                <div class="col s12 m6 l4">
-                    <div class="card hoverable">
-                        <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator project-img" src="assets/images/match.png"
-                                alt="Kroger - Brand Matching">
-                        </div>
-                        <div class="card-content">
-                            <span class="card-title activator pink-text text-darken-4 project-title">
-                                Kroger – Brand Matching<i class="material-icons right">more_vert</i>
-                            </span>
-                            <p>Large-scale image processing and brand intelligence pipelines.</p>
-                        </div>
-                        <div class="card-reveal">
-                            <span class="card-title pink-text text-darken-4 project-title">
-                                Kroger – Brand Matching<i class="material-icons right">close</i>
-                            </span>
-                            <p>
-                                Enhanced data ingestion pipelines using Databricks to support brand matching at scale.
-                                Developed image processing workflows to analyze millions of product images,
-                                extracting features (FACTS) and compliance indicators (JUDGEMENTS) to improve data
-                                quality
-                                and catalog accuracy.
-                            </p>
-                            <p><strong>Tech Stack:</strong> Azure Databricks, Delta Tables, Azure Cognitive Vision,
-                                Azure Functions, Flask, Docker, Azure Data Lake Storage Gen2</p>
-                            <a href="https://github.com/shaikmalikbasha" target="_blank"
-                                class="btn-small pink darken-4 waves-effect">
-                                <i class="material-icons left">code</i>View on GitHub
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 4: Microsoft Fabric POC -->
-                <div class="col s12 m6 l4">
-                    <div class="card hoverable">
-                        <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator project-img" src="assets/images/ms_fabric.png"
-                                alt="Microsoft Fabric POC">
-                        </div>
-                        <div class="card-content">
-                            <span class="card-title activator pink-text text-darken-4 project-title">
-                                Microsoft Fabric POC<i class="material-icons right">more_vert</i>
-                            </span>
-                            <p>Evaluation of Microsoft Fabric for unified analytics.</p>
-                        </div>
-                        <div class="card-reveal">
-                            <span class="card-title pink-text text-darken-4 project-title">
-                                Microsoft Fabric POC<i class="material-icons right">close</i>
-                            </span>
-                            <p>
-                                Conducted a proof of concept to evaluate Microsoft Fabric for future data initiatives.
-                                Built a pipeline to process Azure and AWS cloud cost data, leveraging Fabric components
-                                to demonstrate improved cost visibility and analytical efficiency.
-                            </p>
-                            <p><strong>Tech Stack:</strong> Microsoft Fabric, Azure Data Lake Storage Gen2, Power BI</p>
-                            <a href="https://github.com/shaikmalikbasha" target="_blank"
-                                class="btn-small pink darken-4 waves-effect">
-                                <i class="material-icons left">code</i>View on GitHub
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 5: Kroger - Retail Bulk Data Services -->
-                <div class="col s12 m6 l4">
-                    <div class="card hoverable">
-                        <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator project-img" src="assets/images/retail_bulk.png"
-                                alt="Kroger - Retail Bulk Data Services">
-                        </div>
-                        <div class="card-content">
-                            <span class="card-title activator pink-text text-darken-4 project-title">
-                                Kroger – Retail Bulk Data Services<i class="material-icons right">more_vert</i>
-                            </span>
-                            <p>High-scale streaming pipelines with built-in data validation.</p>
-                        </div>
-                        <div class="card-reveal">
-                            <span class="card-title pink-text text-darken-4 project-title">
-                                Kroger – Retail Bulk Data Services<i class="material-icons right">close</i>
-                            </span>
-                            <p>
-                                Designed and implemented large-scale data pipelines to process retail bulk data
-                                from Azure Event Hub into the Gold layer with normalization and batch-wise metadata
-                                tracking.
-                                Introduced a configurable validation framework using SQL-based functional and quality
-                                checks,
-                                and built monitoring dashboards in Datadog to ensure data reliability and observability.
-                            </p>
-                            <p>
-                                <strong>Tech Stack:</strong> Azure Databricks, Azure Event Hub,
-                                Azure Data Lake Storage Gen2, SQL, Datadog, GitHub Actions
-                            </p>
-                            <a href="https://github.com/shaikmalikbasha" target="_blank"
-                                class="btn-small pink darken-4 waves-effect">
-                                <i class="material-icons left">code</i>View on GitHub
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-    </div>
-
-    <!-- ================= CERTIFICATIONS & EDUCATION ================= -->
-    <div class="container">
-        <section id="certifications" class="section scrollspy grey lighten-5">
-            <div class="row">
-                <!-- Section Heading -->
-                <div class="col s12 center-align">
-                    <h4 class="pink-text text-darken-4">
-                        <i class="material-icons left">verified</i>Certifications & Education
-                    </h4>
-                    <div class="divider pink darken-4"></div>
-                    <p class="flow-text grey-text text-darken-2">
-                        Validated expertise through continuous learning and globally recognised credentials.
-                    </p>
-                </div>
-
-                <!-- Certifications (Left Column) -->
-                <div class="col s12 m7">
-                    <h5 class="pink-text text-darken-4 center-align">
-                        <i class="material-icons center-align">stars</i>&nbsp; Certifications
-                    </h5>
-                    <ul class="collection">
-
-                        <li class="collection-item valign-wrapper">
-                            <!-- Provider Logo -->
-                            <div class="col s3 center-align">
-                                <img src="assets/images/snowflake_computing_logo.jpg" alt="Snowflake Logo" height="64"
-                                    width="64" class="responsive-img circle" loading="lazy" />
-                            </div>
-                            <!-- Certification Details -->
-                            <div class="col s9">
-                                <span class="title pink-text text-darken-4"><strong>SnowPro Core
-                                        Certification</strong></span><br>
-                                <span class="grey-text text-darken-3">
-                                    <strong>Snowflake</strong> — <em>Issued Mar 2025</em>
-                                </span>
-                                <a href="https://achieve.snowflake.com/d446ff78-955e-4a51-ae2f-d84fe4a6dfbb"
-                                    target="_blank" class="btn-flat pink-text text-darken-4 waves-effect">
-                                    <i class="material-icons left">open_in_new</i>View Certificate
-                                </a>
-                            </div>
-                        </li>
-
-                        <li class="collection-item valign-wrapper">
-                            <div class="col s3 center-align">
-                                <img src="assets/images/microsoft_logo.jpg" alt="Microsoft Logo" height="64" width="64"
-                                    class="responsive-img circle" loading="lazy" />
-                            </div>
-                            <div class="col s9">
-                                <span class="title pink-text text-darken-4"><strong>Azure Data Engineer Associate
-                                        (DP-203)</strong></span><br>
-                                <span class="grey-text text-darken-3">
-                                    <strong>Microsoft</strong> — <em>Issued Jan 2023</em>
-                                </span>
-                                <a href="https://learn.microsoft.com/en-us/users/shaikmalikbasha/credentials/24a857f123a29b4"
-                                    target="_blank" class="btn-flat pink-text text-darken-4 waves-effect">
-                                    <i class="material-icons left">open_in_new</i>View Certificate
-                                </a>
-                            </div>
-                        </li>
-
-                        <li class="collection-item valign-wrapper">
-                            <div class="col s3 center-align">
-                                <img src="assets/images/udemy_logo.jpg" alt="Udemy Logo" height="64" width="64"
-                                    class="responsive-img circle" loading="lazy" />
-                            </div>
-                            <div class="col s9">
-                                <span class="title pink-text text-darken-4"><strong>Azure Databricks & Spark For Data
-                                        Engineers</strong></span><br>
-                                <span class="grey-text text-darken-3">
-                                    <strong>Udemy</strong> — <em>Issued Jun 2023</em>
-                                </span>
-                                <a href="https://www.udemy.com/certificate/UC-f2ef7e1b-0c81-4deb-a509-e563d1450e91/"
-                                    target="_blank" class="btn-flat pink-text text-darken-4 waves-effect">
-                                    <i class="material-icons left">open_in_new</i>View Certificate
-                                </a>
-                            </div>
-                        </li>
-
-                        <li class="collection-item valign-wrapper">
-                            <div class="col s3 center-align">
-                                <img src="assets/images/udemy_logo.jpg" alt="Udemy Logo" height="64" width="64"
-                                    class="responsive-img circle" loading="lazy" />
-                            </div>
-                            <div class="col s9">
-                                <span class="title pink-text text-darken-4"><strong>Azure Data Factory For Data
-                                        Engineers</strong></span><br>
-                                <span class="grey-text text-darken-3">
-                                    <strong>Udemy</strong> — <em>Issued Nov 2021</em>
-                                </span>
-                                <a href="https://www.udemy.com/certificate/UC-a6f1d34c-f554-4dea-aa7b-028fb46b582c/"
-                                    target="_blank" class="btn-flat pink-text text-darken-4 waves-effect">
-                                    <i class="material-icons left">open_in_new</i>View Certificate
-                                </a>
-                            </div>
-                        </li>
-
-                        <li class="collection-item valign-wrapper">
-                            <div class="col s3 center-align">
-                                <img src="assets/images/udemy_logo.jpg" alt="Udemy Logo" height="64" width="64"
-                                    class="responsive-img circle" loading="lazy" />
-                            </div>
-                            <div class="col s9">
-                                <span class="title pink-text text-darken-4"><strong>Building REST APIs using Flask &
-                                        Python</strong></span><br>
-                                <span class="grey-text text-darken-3">
-                                    <strong>Udemy</strong> — <em>Issued Aug 2020</em>
-                                </span>
-                                <a href="https://www.udemy.com/certificate/UC-5515650f-35ba-44e9-a354-c2967939f5b3/"
-                                    target="_blank" class="btn-flat pink-text text-darken-4 waves-effect">
-                                    <i class="material-icons left">open_in_new</i>View Certificate
-                                </a>
-                            </div>
-                        </li>
-
-                        <li class="collection-item valign-wrapper">
-                            <div class="col s3 center-align">
-                                <img src="assets/images/udemy_logo.jpg" alt="Udemy Logo" height="64" width="64"
-                                    class="responsive-img circle" loading="lazy" />
-                            </div>
-                            <div class="col s9">
-                                <span class="title pink-text text-darken-4"><strong>Docker for Absolute Beginners
-                                        (DevOps)</strong></span><br>
-                                <span class="grey-text text-darken-3">
-                                    <strong>Udemy</strong> — <em>Issued Sep 2020</em>
-                                </span>
-                                <a href="https://www.udemy.com/certificate/UC-953aca0d-aae8-4338-ada1-a07f41a05f9b/"
-                                    target="_blank" class="btn-flat pink-text text-darken-4 waves-effect">
-                                    <i class="material-icons left">open_in_new</i>View Certificate
-                                </a>
-                            </div>
-                        </li>
-
-                        <li class="collection-item valign-wrapper">
-                            <div class="col s3 center-align">
-                                <img src="assets/images/udemy_logo.jpg" alt="Udemy Logo" height="64" width="64"
-                                    class="responsive-img circle" loading="lazy" />
-                            </div>
-                            <div class="col s9">
-                                <span class="title pink-text text-darken-4"><strong>React JS Web Development – The
-                                        Essentials Bootcamp</strong></span><br>
-                                <span class="grey-text text-darken-3">
-                                    <strong>Udemy</strong> — <em>Issued Oct 2020</em>
-                                </span>
-                                <a href="https://www.udemy.com/certificate/UC-1856fb83-905f-444f-a7a0-801bd75319cb/"
-                                    target="_blank" class="btn-flat pink-text text-darken-4 waves-effect">
-                                    <i class="material-icons left">open_in_new</i>View Certificate
-                                </a>
-                            </div>
-                        </li>
-
-                        <li class="collection-item valign-wrapper">
-                            <div class="col s3 center-align">
-                                <img src="assets/images/udemy_logo.jpg" alt="Udemy Logo" height="64" width="64"
-                                    class="responsive-img circle" loading="lazy" />
-                            </div>
-                            <div class="col s9">
-                                <span class="title pink-text text-darken-4"><strong>GitHub Copilot – The Complete
-                                        Guide</strong></span><br>
-                                <span class="grey-text text-darken-3">
-                                    <strong>Udemy</strong> — <em>Issued Nov 2024</em>
-                                </span>
-                                <a href="https://www.udemy.com/certificate/UC-88f3f618-71de-45ec-b5c1-03ed06606f4d/"
-                                    target="_blank" class="btn-flat pink-text text-darken-4 waves-effect">
-                                    <i class="material-icons left">open_in_new</i>View Certificate
-                                </a>
-                            </div>
-                        </li>
-
-                    </ul>
-                </div>
-
-                <!-- Education (Right Column) -->
-                <div class="col s12 m5">
-                    <h5 class="pink-text text-darken-4 center-align">
-                        <i class="material-icons center-align">school</i>&nbsp; Education
-                    </h5>
-
-                    <ul class="collection z-depth-1">
-
-                        <li class="collection-item">
-                            <i class="material-icons left pink-text text-darken-4"
-                                style="margin-top: 5px;">engineering</i>
-                            <div class="card-content" style="padding: 0;">
-                                <span class="card-title pink-text text-darken-4">
-                                    <strong>Bachelor of Technology (B.Tech)</strong>
-                                </span>
-                                <p class="grey-text text-darken-2" style="margin-left: 36px;">
-                                    Computer Science & Engineering<br>
-                                    <strong>Brindavan Institute of Technology & Science - Kurnool</strong>&nbsp;
-                                    (Affiliated to JNTUA)<br>
-                                    <em>Graduated 2019 (75%)</em>
-                                </p>
-                            </div>
-                        </li>
-
-                        <li class="collection-item" style="height: 1px; padding: 0;">
-                            <div class="divider"></div>
-                        </li>
-
-                        <li class="collection-item">
-                            <i class="material-icons left pink-text text-darken-4"
-                                style="margin-top: 5px;">auto_stories</i>
-                            <div class="card-content" style="padding: 0;">
-                                <span class="card-title pink-text text-darken-4">
-                                    <strong>Intermediate (XII Class)</strong>
-                                </span>
-                                <p class="grey-text text-darken-2" style="margin-left: 36px;">
-                                    A.P. Board of Intermediate Education<br>
-                                    <strong>Nalanda Junior College – Kurnool</strong><br>
-                                    <em>Completed 2015 (87%)</em>
-                                </p>
-                            </div>
-                        </li>
-
-                        <li class="collection-item" style="height: 1px; padding: 0;">
-                            <div class="divider"></div>
-                        </li>
-
-                        <li class="collection-item">
-                            <i class="material-icons left pink-text text-darken-4"
-                                style="margin-top: 5px;">menu_book</i>
-                            <div class="card-content" style="padding: 0;">
-                                <span class="card-title pink-text text-darken-4">
-                                    <strong>SSC (X Class)</strong>
-                                </span>
-                                <p class="grey-text text-darken-2" style="margin-left: 36px;">
-                                    A.P. Board of Secondary Education<br>
-                                    <strong>Zilla Parishad High School (Z.P.H.S) - Nannur</strong><br>
-                                    <em>Completed 2013 (93%)</em>
-                                </p>
-                            </div>
-                        </li>
-                    </ul>
-
-                </div>
-
-            </div>
-        </section>
-    </div>
-
-
-    <!-- ================= GitHub Contribution ================= -->
-    <!-- <div class="container">
-        <section id="github-contributions" class="section scrollspy white darken-1">
-            <div class="row center-align">
-                <h5 class="flow-text black-text text-darken-6">My GitHub Contributions</h5>
-                <div class="calendar">
-                    Loading the data just for you.
-                </div>
-                <a href="https://github.com/shaikmalikbasha" target="_blank">
-                    <img src="https://ghchart.rshah.org/shaikmalikbasha" alt="shaikmalikbasha's GitHub Contributions"
-                        style="width: 100%; max-width: 700px;" />
+    <!-- ===================== NAVBAR ===================== -->
+    <div class="navbar-fixed">
+        <nav class="nav-main">
+            <div class="nav-wrapper container">
+                <a href="#home-section" class="brand-logo">
+                    <img src="assets/images/malik-shaik-icon.png" alt="Shaik Malik Basha" class="logo-img" />
                 </a>
+
+                <ul class="left hide-on-med-and-down" style="margin-left: 70px;">
+                    <li><a href="#home-section" class="nav-title-text">Malik &nbsp;·&nbsp; Data &amp; AI Engineer</a></li>
+                </ul>
+
+                <!-- Mobile trigger -->
+                <a href="#" data-target="mobile-nav" class="sidenav-trigger left">
+                    <i class="material-icons nav-icon">menu</i>
+                </a>
+
+                <!-- Desktop links -->
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#ai-section" class="nav-link">AI &amp; LLM</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#certifications" class="nav-link">Certs</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                    <li>
+                        <button id="theme-toggle" class="btn-flat theme-btn" title="Toggle dark / light mode">
+                            <i class="material-icons theme-icon">light_mode</i>
+                        </button>
+                    </li>
+                    <li>
+                        <a href="assets/docs/Malik - Sr Data Engineer - Resume.pdf" target="_blank"
+                            class="btn resume-btn waves-effect waves-light">
+                            <i class="material-icons left">file_download</i>Resume
+                        </a>
+                    </li>
+                </ul>
             </div>
-        </section>
-    </div> -->
-    <!-- ================= Resume Modal ================= -->
-    <div id="resume-modal" class="modal modal-fixed-footer">
-        <div class="modal-header">
-            <h5 class="center-align pink-text text-darken-4">
-                <strong>Resume</strong>
-            </h5>
-        </div>
-        <div class="modal-content">
-            <iframe src="" width="100%" height="600px" style="border: none"></iframe>
-        </div>
-        <div class="modal-footer">
-            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
-        </div>
+        </nav>
     </div>
 
-    <!-- ================= FOOTER ================= -->
-    <div class="container-fluid">
-        <footer class="page-footer pink darken-4">
+    <!-- ===================== MOBILE SIDENAV ===================== -->
+    <ul class="sidenav" id="mobile-nav">
+        <li>
+            <div class="user-view">
+                <div class="background">
+                    <img class="responsive-img" src="assets/images/user_bg.jpg" alt="" />
+                </div>
+                <a href="#user"><img class="circle sidenav-avatar" src="assets/images/malik-shaik-icon.png" alt="Shaik Malik Basha" /></a>
+                <a href="#name"><span class="white-text bold name">Shaik Malik Basha</span></a>
+                <a href="#title"><span class="white-text email">Data &amp; AI Engineer</span></a>
+            </div>
+        </li>
+        <li>
+            <a href="https://www.linkedin.com/in/shaik-malik-basha-2b4367167" target="_blank" class="sidenav-link">
+                <i class="fa-brands fa-linkedin sidenav-icon"></i>LinkedIn
+            </a>
+        </li>
+        <li>
+            <a href="https://github.com/shaikmalikbasha" target="_blank" class="sidenav-link">
+                <i class="fa-brands fa-github sidenav-icon"></i>GitHub
+            </a>
+        </li>
+        <li><div class="divider"></div></li>
+        <li><a href="#home-section" class="sidenav-close sidenav-nav-link"><i class="material-icons left">home</i>Home</a></li>
+        <li><a href="#about"        class="sidenav-close sidenav-nav-link"><i class="material-icons left">person</i>About</a></li>
+        <li><a href="#ai-section"   class="sidenav-close sidenav-nav-link"><i class="material-icons left">psychology</i>AI &amp; LLM</a></li>
+        <li><a href="#skills"       class="sidenav-close sidenav-nav-link"><i class="material-icons left">build</i>Skills</a></li>
+        <li><a href="#experience"   class="sidenav-close sidenav-nav-link"><i class="material-icons left">work</i>Experience</a></li>
+        <li><a href="#projects"     class="sidenav-close sidenav-nav-link"><i class="material-icons left">folder</i>Projects</a></li>
+        <li><a href="#certifications" class="sidenav-close sidenav-nav-link"><i class="material-icons left">stars</i>Certifications</a></li>
+        <li><a href="#contact"      class="sidenav-close sidenav-nav-link"><i class="material-icons left">email</i>Contact</a></li>
+        <li><div class="divider"></div></li>
+        <li>
+            <a href="assets/docs/Malik - Sr Data Engineer - Resume.pdf" target="_blank" class="sidenav-nav-link">
+                <i class="material-icons left">file_download</i>Download Resume
+            </a>
+        </li>
+    </ul>
+
+    <!-- ===================== HERO ===================== -->
+    <div id="home-section" class="hero-section">
+        <section class="hero-inner section">
             <div class="container">
                 <div class="row">
-                    <div class="col l6 s9">
-                        <h5 class="white-text">Shaik Malik Basha</h5>
-                        <p class="grey-text text-lighten-4 tagline">
-                            <!-- Data Engineer | Building Scalable Data Platforms & Intelligent APIs -->
-                            Data Engineer | API Development | Expertise in Databricks, Microsoft Fabric, Snowflake,
-                            Azure Data Factory, Azure Functions | LLMs & AI | LangChain | Proficiency in Python,
-                            Flask/FastAPI/Sanic, SQLAlchemy
-                            with
-                            SQL DBs | Git | Docker
+                    <div class="col s12 hero-content">
+                        <p class="hero-greeting">Hi, I'm</p>
+                        <h1 class="hero-name">Shaik Malik Basha</h1>
+                        <h2 class="hero-title">Data &amp; AI Engineer</h2>
+                        <p class="hero-tagline">
+                            Principal Engineer &nbsp;·&nbsp; 6+ Years &nbsp;·&nbsp; Costrategix<br />
+                            Real-time pipelines &nbsp;·&nbsp; AI-integrated APIs &nbsp;·&nbsp; Cloud-native analytics
                         </p>
-
-                        <!-- Social Icons -->
-                        <div class="section">
-                            <a href="https://www.instagram.com/__shaikmalikbasha__" target="_blank" class="left">
-                                <i class="fa-brands fa-instagram white-text"
-                                    style="font-size:28px; margin-right:12px;"></i>
+                        <p class="hero-animated-line">
+                            I build systems that turn raw data into&nbsp;
+                            <span id="animated-text" class="accent-text">&nbsp;</span>
+                        </p>
+                        <div class="hero-cta">
+                            <a href="assets/docs/Malik - Sr Data Engineer - Resume.pdf" target="_blank"
+                                class="btn cta-primary waves-effect waves-light">
+                                <i class="material-icons left">file_download</i>Download Resume
                             </a>
-                            <a href="https://www.linkedin.com/in/shaik-malik-basha-2b4367167" target="_blank"
-                                class="left">
-                                <i class="fa-brands fa-linkedin white-text"
-                                    style="font-size:28px; margin-right:12px;"></i>
+                            <a href="#contact" class="btn cta-secondary waves-effect">
+                                <i class="material-icons left">email</i>Get In Touch
+                            </a>
+                        </div>
+                        <div class="hero-stack-badges">
+                            <span class="stack-badge">Azure Databricks</span>
+                            <span class="stack-badge">Snowflake</span>
+                            <span class="stack-badge">Azure OpenAI</span>
+                            <span class="stack-badge">LangChain</span>
+                            <span class="stack-badge">Microsoft Fabric</span>
+                            <span class="stack-badge">FastAPI</span>
+                            <span class="stack-badge">PySpark</span>
+                            <span class="stack-badge">Terraform</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- ===================== ABOUT ===================== -->
+    <div class="section-wrapper surface-alt">
+        <section id="about" class="section scrollspy">
+            <div class="container">
+                <div class="row">
+                    <div class="col s12 center-align">
+                        <h4 class="section-title"><i class="material-icons">person_outline</i>About Me</h4>
+                        <div class="section-divider"></div>
+                    </div>
+
+                    <div class="col s12 m7">
+                        <div class="card-custom hoverable">
+                            <div class="card-custom-title"><i class="material-icons">work</i>Professional Journey</div>
+                            <p>I'm a <strong>Principal Data &amp; AI Engineer</strong> with over <strong>6 years of experience</strong> designing scalable batch and real-time data platforms on Azure. I specialise in <strong>Medallion Architecture</strong>, data validation automation, cloud infrastructure via <strong>Terraform</strong>, and <strong>AI-integrated APIs</strong> using LLMs.</p>
+                            <br />
+                            <p>I've built enterprise-grade ETL pipelines, automated data quality frameworks, and production-ready systems across <strong>Databricks, Snowflake, Microsoft Fabric</strong>, and the full Azure data stack.</p>
+                            <br />
+                            <p>Currently expanding into <strong>AI &amp; LLM engineering</strong> — building RAG pipelines, intelligent query systems, and AI-powered data observability platforms using <strong>Azure OpenAI, LangChain, and Claude</strong>.</p>
+                        </div>
+                    </div>
+
+                    <div class="col s12 m5">
+                        <div class="card-custom card-accent-light hoverable">
+                            <div class="card-custom-title"><i class="material-icons">info_outline</i>Quick Facts</div>
+                            <ul class="facts-list">
+                                <li>
+                                    <i class="material-icons tiny accent-text">event</i>
+                                    <span><strong>Experience:</strong> 6+ Years</span>
+                                </li>
+                                <li>
+                                    <i class="material-icons tiny accent-text">business</i>
+                                    <span><strong>Role:</strong> Principal Engineer @ Costrategix</span>
+                                </li>
+                                <li>
+                                    <i class="material-icons tiny accent-text">location_on</i>
+                                    <span><strong>Based in:</strong> Andhra Pradesh, India</span>
+                                </li>
+                                <li>
+                                    <i class="material-icons tiny accent-text">email</i>
+                                    <span><strong>Email:</strong>
+                                        <a href="mailto:shaikmalikbasha1998@gmail.com" class="accent-text">
+                                            shaikmalikbasha1998@gmail.com
+                                        </a>
+                                    </span>
+                                </li>
+                                <li>
+                                    <i class="material-icons tiny accent-text">phone</i>
+                                    <span><strong>Phone:</strong> +91 8886114113</span>
+                                </li>
+                                <li>
+                                    <i class="material-icons tiny accent-text">link</i>
+                                    <span><strong>LinkedIn:</strong>
+                                        <a href="https://www.linkedin.com/in/shaik-malik-basha-2b4367167" target="_blank" class="accent-text">
+                                            /shaik-malik-basha
+                                        </a>
+                                    </span>
+                                </li>
+                                <li>
+                                    <i class="material-icons tiny accent-text">code</i>
+                                    <span><strong>GitHub:</strong>
+                                        <a href="https://github.com/shaikmalikbasha" target="_blank" class="accent-text">
+                                            /shaikmalikbasha
+                                        </a>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- ===================== AI & LLM (NEW) ===================== -->
+    <div class="section-wrapper">
+        <section id="ai-section" class="section scrollspy">
+            <div class="container">
+                <div class="row">
+                    <div class="col s12 center-align">
+                        <h4 class="section-title"><i class="material-icons">psychology</i>AI &amp; LLM Engineering</h4>
+                        <div class="section-divider"></div>
+                        <p class="section-subtitle">Bridging data engineering with intelligent systems — building AI-powered pipelines, RAG applications, and LLM-integrated APIs.</p>
+                    </div>
+
+                    <div class="col s12 m6 l3">
+                        <div class="ai-card hoverable">
+                            <div class="ai-card-icon"><i class="material-icons">smart_toy</i></div>
+                            <h6 class="ai-card-title">LLM Integration</h6>
+                            <p class="ai-card-desc">Built production APIs powered by <strong>Azure OpenAI</strong> for intelligent SQL generation, anomaly tagging, and automated data quality insights at enterprise scale.</p>
+                            <div class="ai-tags">
+                                <span class="skill-badge">Azure OpenAI</span>
+                                <span class="skill-badge">GPT-4</span>
+                                <span class="skill-badge">LLMs</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col s12 m6 l3">
+                        <div class="ai-card hoverable">
+                            <div class="ai-card-icon"><i class="material-icons">account_tree</i></div>
+                            <h6 class="ai-card-title">RAG Pipelines</h6>
+                            <p class="ai-card-desc">Building <strong>Retrieval-Augmented Generation</strong> pipelines with LangChain to enable context-aware responses over structured and unstructured data sources.</p>
+                            <div class="ai-tags">
+                                <span class="skill-badge">LangChain</span>
+                                <span class="skill-badge">RAG</span>
+                                <span class="skill-badge">Vector DBs</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col s12 m6 l3">
+                        <div class="ai-card hoverable">
+                            <div class="ai-card-icon"><i class="material-icons">analytics</i></div>
+                            <h6 class="ai-card-title">AI Data Quality</h6>
+                            <p class="ai-card-desc">Engineered an <strong>AI-driven anomaly detection platform</strong> (QGrid) classifying Freshness, Schema, Volume, and Distribution signals via ML models + LLMs.</p>
+                            <div class="ai-tags">
+                                <span class="skill-badge">Anomaly Detection</span>
+                                <span class="skill-badge">ML APIs</span>
+                                <span class="skill-badge">Flask-RestX</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col s12 m6 l3">
+                        <div class="ai-card hoverable">
+                            <div class="ai-card-icon"><i class="material-icons">terminal</i></div>
+                            <h6 class="ai-card-title">AI Dev Tooling</h6>
+                            <p class="ai-card-desc">Actively using <strong>Claude Code, GitHub Copilot, and Databricks Genie</strong> to accelerate data engineering workflows, pipeline debugging, and code generation.</p>
+                            <div class="ai-tags">
+                                <span class="skill-badge">Claude Code</span>
+                                <span class="skill-badge">Copilot</span>
+                                <span class="skill-badge">Genie</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- ===================== SKILLS ===================== -->
+    <div class="section-wrapper surface-alt">
+        <section id="skills" class="section scrollspy">
+            <div class="container">
+                <div class="row">
+                    <div class="col s12 center-align">
+                        <h4 class="section-title"><i class="material-icons">build_circle</i>Technical Skills</h4>
+                        <div class="section-divider"></div>
+                        <p class="section-subtitle">Verified from 6+ years of hands-on production engineering.</p>
+                    </div>
+
+                    <div class="col s12 m6 l4">
+                        <div class="skill-group hoverable">
+                            <div class="skill-group-title"><i class="material-icons tiny">storage</i>Data Engineering</div>
+                            <div class="skill-badges">
+                                <span class="skill-badge">ETL / ELT</span>
+                                <span class="skill-badge">Medallion Architecture</span>
+                                <span class="skill-badge">Delta Tables</span>
+                                <span class="skill-badge">Data Quality Frameworks</span>
+                                <span class="skill-badge">Real-time Streaming</span>
+                                <span class="skill-badge">Batch Processing</span>
+                                <span class="skill-badge">Data Lineage</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col s12 m6 l4">
+                        <div class="skill-group hoverable">
+                            <div class="skill-group-title"><i class="material-icons tiny">cloud</i>Cloud &amp; Data Platforms</div>
+                            <div class="skill-badges">
+                                <span class="skill-badge">Azure Databricks</span>
+                                <span class="skill-badge">Azure Data Factory</span>
+                                <span class="skill-badge">Microsoft Fabric</span>
+                                <span class="skill-badge">Snowflake</span>
+                                <span class="skill-badge">Azure Functions</span>
+                                <span class="skill-badge">Azure Event Hub</span>
+                                <span class="skill-badge">ADLS Gen2</span>
+                                <span class="skill-badge">Azure Cognitive Vision</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col s12 m6 l4">
+                        <div class="skill-group hoverable">
+                            <div class="skill-group-title"><i class="material-icons tiny">psychology</i>AI &amp; LLM</div>
+                            <div class="skill-badges">
+                                <span class="skill-badge">Azure OpenAI</span>
+                                <span class="skill-badge">LangChain</span>
+                                <span class="skill-badge">RAG Pipelines</span>
+                                <span class="skill-badge">LLMs</span>
+                                <span class="skill-badge">AI Anomaly Detection</span>
+                                <span class="skill-badge">Prompt Engineering</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col s12 m6 l4">
+                        <div class="skill-group hoverable">
+                            <div class="skill-group-title"><i class="material-icons tiny">api</i>API &amp; Backend</div>
+                            <div class="skill-badges">
+                                <span class="skill-badge">FastAPI</span>
+                                <span class="skill-badge">Flask / Flask-RestX</span>
+                                <span class="skill-badge">SQLAlchemy</span>
+                                <span class="skill-badge">Sanic</span>
+                                <span class="skill-badge">GraphQL</span>
+                                <span class="skill-badge">Swagger / OpenAPI</span>
+                                <span class="skill-badge">Microservices</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col s12 m6 l4">
+                        <div class="skill-group hoverable">
+                            <div class="skill-group-title"><i class="material-icons tiny">code</i>Programming</div>
+                            <div class="skill-badges">
+                                <span class="skill-badge">Python</span>
+                                <span class="skill-badge">PySpark</span>
+                                <span class="skill-badge">SQL</span>
+                                <span class="skill-badge">Java</span>
+                                <span class="skill-badge">JavaScript</span>
+                                <span class="skill-badge">PHP</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col s12 m6 l4">
+                        <div class="skill-group hoverable">
+                            <div class="skill-group-title"><i class="material-icons tiny">terminal</i>Infrastructure &amp; DevOps</div>
+                            <div class="skill-badges">
+                                <span class="skill-badge">Terraform</span>
+                                <span class="skill-badge">Docker</span>
+                                <span class="skill-badge">GitHub Actions</span>
+                                <span class="skill-badge">Azure DevOps</span>
+                                <span class="skill-badge">Datadog</span>
+                                <span class="skill-badge">CI/CD</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- ===================== EXPERIENCE ===================== -->
+    <div class="section-wrapper">
+        <section id="experience" class="section scrollspy">
+            <div class="container">
+                <div class="row">
+                    <div class="col s12 center-align">
+                        <h4 class="section-title"><i class="material-icons">work_outline</i>Experience</h4>
+                        <div class="section-divider"></div>
+                        <p class="section-subtitle">6+ years at Costrategix — from Trainee to Principal Engineer, delivering enterprise-scale data &amp; AI systems.</p>
+                    </div>
+
+                    <div class="col s12">
+                        <div class="timeline">
+
+                            <!-- ROLE 1 -->
+                            <div class="timeline-item">
+                                <div class="timeline-marker accent-bg">
+                                    <i class="material-icons">emoji_events</i>
+                                </div>
+                                <div class="timeline-content card-custom hoverable">
+                                    <div class="timeline-header">
+                                        <span class="timeline-role">Principal Software Engineer (Sr Data Engineer)</span>
+                                        <span class="timeline-company">
+                                            <a href="https://www.costrategix.com/" target="_blank">Costrategix</a>
+                                            &nbsp;·&nbsp; Mar 2025 – Present
+                                        </span>
+                                    </div>
+
+                                    <div class="timeline-project">
+                                        <span class="project-label">Project: Kroger – Retail Bulk Data Services</span>
+                                    </div>
+                                    <ul class="timeline-bullets">
+                                        <li>Architected <strong>scalable real-time pipelines</strong> ingesting retail data from Azure Event Hub into Medallion layers (Bronze → Silver → Gold)</li>
+                                        <li>Designed <strong>batch-aware metadata tracking</strong> for improved data lineage and traceability across environments</li>
+                                        <li>Built a <strong>configurable SQL-based validation framework</strong> with threshold-based checks to enforce data integrity at scale</li>
+                                        <li>Implemented <strong>Datadog monitoring dashboards</strong> tracking pipeline accuracy, quality metrics, and operational health</li>
+                                        <li>Reduced data discrepancies and improved operational visibility across production environments</li>
+                                    </ul>
+                                    <div class="timeline-stack">
+                                        <span class="skill-badge">Azure Databricks</span>
+                                        <span class="skill-badge">Azure Event Hub</span>
+                                        <span class="skill-badge">ADLS Gen2</span>
+                                        <span class="skill-badge">PySpark</span>
+                                        <span class="skill-badge">GitHub Actions</span>
+                                        <span class="skill-badge">Datadog</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- ROLE 2 -->
+                            <div class="timeline-item">
+                                <div class="timeline-marker accent-bg">
+                                    <i class="material-icons">analytics</i>
+                                </div>
+                                <div class="timeline-content card-custom hoverable">
+                                    <div class="timeline-header">
+                                        <span class="timeline-role">Member Software Engineer (Data Engineer)</span>
+                                        <span class="timeline-company">
+                                            <a href="https://www.costrategix.com/" target="_blank">Costrategix</a>
+                                            &nbsp;·&nbsp; Jun 2023 – Mar 2025
+                                        </span>
+                                    </div>
+
+                                    <div class="timeline-project">
+                                        <span class="project-label">Project: QGrid – QIntel (AI Data Quality Platform)</span>
+                                    </div>
+                                    <ul class="timeline-bullets">
+                                        <li>Developed <strong>production-grade Flask REST APIs</strong> integrating ML models for multi-dimensional anomaly detection (Freshness, Schema, Volume, Distribution)</li>
+                                        <li>Built a <strong>SQL AI Assistant API</strong> leveraging Azure OpenAI (LLM) for intelligent query generation and automated data insights</li>
+                                        <li>Designed <strong>AI-driven anomaly grouping and descriptive tagging</strong> system to accelerate root-cause analysis</li>
+                                        <li>Containerised all services using <strong>Docker</strong> and deployed via <strong>CI/CD pipelines</strong> on Azure DevOps</li>
+                                    </ul>
+                                    <div class="timeline-stack">
+                                        <span class="skill-badge">Flask-RestX</span>
+                                        <span class="skill-badge">Azure OpenAI</span>
+                                        <span class="skill-badge">PostgreSQL</span>
+                                        <span class="skill-badge">SQLAlchemy</span>
+                                        <span class="skill-badge">Docker</span>
+                                        <span class="skill-badge">Azure DevOps</span>
+                                    </div>
+
+                                    <div class="timeline-project" style="margin-top: 14px;">
+                                        <span class="project-label">Project: Patient Point (Data Governance)</span>
+                                    </div>
+                                    <ul class="timeline-bullets">
+                                        <li>Re-engineered <strong>Snowflake role-based access model</strong>, eliminating redundant roles and strengthening data governance</li>
+                                        <li>Automated <strong>infrastructure provisioning</strong> using Terraform, improving deployment consistency and auditability</li>
+                                    </ul>
+                                    <div class="timeline-stack">
+                                        <span class="skill-badge">Snowflake</span>
+                                        <span class="skill-badge">Terraform</span>
+                                    </div>
+
+                                    <div class="timeline-project" style="margin-top: 14px;">
+                                        <span class="project-label">Project: Internal Fabric POC</span>
+                                    </div>
+                                    <ul class="timeline-bullets">
+                                        <li>Led <strong>proof-of-concept evaluation of Microsoft Fabric</strong> for enterprise adoption and platform modernisation</li>
+                                        <li>Designed pipeline analysing <strong>Azure and cloud cost data</strong> within the Fabric ecosystem; delivered architecture recommendations</li>
+                                    </ul>
+                                    <div class="timeline-stack">
+                                        <span class="skill-badge">Microsoft Fabric</span>
+                                        <span class="skill-badge">ADLS Gen2</span>
+                                        <span class="skill-badge">SQL</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- ROLE 3 -->
+                            <div class="timeline-item">
+                                <div class="timeline-marker accent-bg">
+                                    <i class="material-icons">data_usage</i>
+                                </div>
+                                <div class="timeline-content card-custom hoverable">
+                                    <div class="timeline-header">
+                                        <span class="timeline-role">Associate Software Engineer (Data Engineer)</span>
+                                        <span class="timeline-company">
+                                            <a href="https://www.costrategix.com/" target="_blank">Costrategix</a>
+                                            &nbsp;·&nbsp; Apr 2021 – Jun 2022
+                                        </span>
+                                    </div>
+
+                                    <div class="timeline-project">
+                                        <span class="project-label">Project: Empower Data Cloud (EDC)</span>
+                                    </div>
+                                    <ul class="timeline-bullets">
+                                        <li>Designed <strong>modular ETL pipelines</strong> using Azure Data Factory following Medallion Architecture</li>
+                                        <li>Integrated multiple source systems into <strong>Snowflake via ADLS Gen2</strong></li>
+                                        <li>Built <strong>batch validation services</strong> using Azure Functions (Python) to enforce data quality checks at each layer</li>
+                                    </ul>
+                                    <div class="timeline-stack">
+                                        <span class="skill-badge">Azure Data Factory</span>
+                                        <span class="skill-badge">Azure Functions</span>
+                                        <span class="skill-badge">Snowflake</span>
+                                        <span class="skill-badge">ADLS Gen2</span>
+                                    </div>
+
+                                    <div class="timeline-project" style="margin-top: 14px;">
+                                        <span class="project-label">Project: Kroger – Brand Matching &amp; Image Processing</span>
+                                    </div>
+                                    <ul class="timeline-bullets">
+                                        <li>Enhanced <strong>large-scale ingestion pipelines</strong> using Azure Databricks and Delta Tables</li>
+                                        <li>Developed image processing workflows analysing <strong>millions of product images</strong> for compliance and quality</li>
+                                        <li>Extracted image features (FACTS) and business rule flags (JUDGEMENTS) using <strong>Azure Cognitive Vision</strong></li>
+                                        <li>Built scalable APIs integrating <strong>ML-based product matching systems</strong> and automated Terraform provisioning</li>
+                                    </ul>
+                                    <div class="timeline-stack">
+                                        <span class="skill-badge">Databricks</span>
+                                        <span class="skill-badge">Delta Tables</span>
+                                        <span class="skill-badge">Azure Cognitive Vision</span>
+                                        <span class="skill-badge">Azure Functions</span>
+                                        <span class="skill-badge">Docker</span>
+                                        <span class="skill-badge">Terraform</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- ROLE 4 -->
+                            <div class="timeline-item">
+                                <div class="timeline-marker accent-bg">
+                                    <i class="material-icons">school</i>
+                                </div>
+                                <div class="timeline-content card-custom hoverable">
+                                    <div class="timeline-header">
+                                        <span class="timeline-role">Trainee Software Engineer</span>
+                                        <span class="timeline-company">
+                                            <a href="https://www.costrategix.com/" target="_blank">Costrategix</a>
+                                            &nbsp;·&nbsp; Sep 2019 – Apr 2021
+                                        </span>
+                                    </div>
+                                    <ul class="timeline-bullets">
+                                        <li>Automated <strong>USDA data ingestion pipeline</strong> using Azure Functions and Azure Event Hub — reduced manual processing effort</li>
+                                        <li>Developed <strong>Dockerised Flask API</strong> for ML-based product matching predictions</li>
+                                        <li>Provisioned Azure infrastructure components using <strong>Terraform</strong></li>
+                                        <li>Refactored legacy <strong>PHP e-commerce codebase</strong> (Rokkitwear) following MVC best practices</li>
+                                    </ul>
+                                    <div class="timeline-stack">
+                                        <span class="skill-badge">Azure Functions</span>
+                                        <span class="skill-badge">Azure Event Hub</span>
+                                        <span class="skill-badge">Flask</span>
+                                        <span class="skill-badge">Docker</span>
+                                        <span class="skill-badge">Terraform</span>
+                                        <span class="skill-badge">PHP / MySQL</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- ===================== PROJECTS ===================== -->
+    <div class="section-wrapper surface-alt">
+        <section id="projects" class="section scrollspy">
+            <div class="container">
+                <div class="row">
+                    <div class="col s12 center-align">
+                        <h4 class="section-title"><i class="material-icons">folder_open</i>Projects &amp; Case Studies</h4>
+                        <div class="section-divider"></div>
+                        <p class="section-subtitle">Real-world systems spanning real-time streaming, AI integration, and enterprise-scale analytics.</p>
+                    </div>
+
+                    <!-- P1: QGrid -->
+                    <div class="col s12 m6 l4">
+                        <div class="project-card hoverable">
+                            <div class="project-img-wrapper">
+                                <img src="assets/images/qgrid.png" alt="QGrid - QIntel Project" class="project-img" />
+                                <div class="project-overlay">
+                                    <span class="project-type-tag">AI · Data Quality</span>
+                                </div>
+                            </div>
+                            <div class="project-body">
+                                <h6 class="project-title">QGrid – QIntel</h6>
+                                <p class="project-problem"><strong>Problem:</strong> Data teams lacked visibility into Freshness, Schema, Volume, and Distribution anomalies — root-cause analysis was manual and slow.</p>
+                                <p class="project-solution"><strong>Solution:</strong> Built Flask microservices integrating ML models for multi-dimensional anomaly detection, plus a <strong>SQL AI Assistant</strong> (Azure OpenAI) for automated insight generation and descriptive anomaly tagging.</p>
+                                <div class="project-stack">
+                                    <span class="skill-badge">Flask-RestX</span>
+                                    <span class="skill-badge">Azure OpenAI</span>
+                                    <span class="skill-badge">PostgreSQL</span>
+                                    <span class="skill-badge">SQLAlchemy</span>
+                                    <span class="skill-badge">Docker</span>
+                                    <span class="skill-badge">Snowflake</span>
+                                    <span class="skill-badge">Datadog</span>
+                                </div>
+                                <a href="https://github.com/shaikmalikbasha" target="_blank" class="btn-small project-btn waves-effect">
+                                    <i class="material-icons left">code</i>GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- P2: Kroger Retail Bulk -->
+                    <div class="col s12 m6 l4">
+                        <div class="project-card hoverable">
+                            <div class="project-img-wrapper">
+                                <img src="assets/images/retail_bulk.png" alt="Kroger Retail Bulk Data Services" class="project-img" />
+                                <div class="project-overlay">
+                                    <span class="project-type-tag">Real-time · Streaming</span>
+                                </div>
+                            </div>
+                            <div class="project-body">
+                                <h6 class="project-title">Kroger – Retail Bulk Data Services</h6>
+                                <p class="project-problem"><strong>Problem:</strong> Retail pipelines had poor lineage tracking and no automated validation — data discrepancies reached production undetected.</p>
+                                <p class="project-solution"><strong>Solution:</strong> Architected real-time streaming from <strong>Azure Event Hub → Medallion layers</strong> (Bronze → Silver → Gold) with SQL validation framework and Datadog observability dashboards.</p>
+                                <div class="project-stack">
+                                    <span class="skill-badge">Azure Databricks</span>
+                                    <span class="skill-badge">Azure Event Hub</span>
+                                    <span class="skill-badge">ADLS Gen2</span>
+                                    <span class="skill-badge">PySpark</span>
+                                    <span class="skill-badge">GitHub Actions</span>
+                                    <span class="skill-badge">Datadog</span>
+                                </div>
+                                <a href="https://github.com/shaikmalikbasha" target="_blank" class="btn-small project-btn waves-effect">
+                                    <i class="material-icons left">code</i>GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- P3: Empower Data Cloud -->
+                    <div class="col s12 m6 l4">
+                        <div class="project-card hoverable">
+                            <div class="project-img-wrapper">
+                                <img src="assets/images/edc.png" alt="Empower Data Cloud" class="project-img" />
+                                <div class="project-overlay">
+                                    <span class="project-type-tag">ETL · Medallion</span>
+                                </div>
+                            </div>
+                            <div class="project-body">
+                                <h6 class="project-title">Empower Data Cloud</h6>
+                                <p class="project-problem"><strong>Problem:</strong> Enterprise data from multiple source systems had inconsistent quality and no unified lakehouse architecture.</p>
+                                <p class="project-solution"><strong>Solution:</strong> Designed modular <strong>ADF pipelines with Medallion Architecture</strong> into Snowflake, with Azure Functions-based batch validation enforcing quality at each layer.</p>
+                                <div class="project-stack">
+                                    <span class="skill-badge">Azure Data Factory</span>
+                                    <span class="skill-badge">Azure Functions</span>
+                                    <span class="skill-badge">Snowflake</span>
+                                    <span class="skill-badge">ADLS Gen2</span>
+                                </div>
+                                <a href="https://github.com/shaikmalikbasha" target="_blank" class="btn-small project-btn waves-effect">
+                                    <i class="material-icons left">code</i>GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- P4: Kroger Brand Matching -->
+                    <div class="col s12 m6 l4">
+                        <div class="project-card hoverable">
+                            <div class="project-img-wrapper">
+                                <img src="assets/images/match.png" alt="Kroger Brand Matching" class="project-img" />
+                                <div class="project-overlay">
+                                    <span class="project-type-tag">ML · Image Processing</span>
+                                </div>
+                            </div>
+                            <div class="project-body">
+                                <h6 class="project-title">Kroger – Brand Matching &amp; Image Processing</h6>
+                                <p class="project-problem"><strong>Problem:</strong> Millions of product images needed automated compliance checks — manual review was not scalable.</p>
+                                <p class="project-solution"><strong>Solution:</strong> Built <strong>Databricks + Delta Tables pipelines</strong> with Azure Cognitive Vision to extract FACTS and JUDGEMENTS from product images at scale, integrated with ML-based product matching APIs.</p>
+                                <div class="project-stack">
+                                    <span class="skill-badge">Databricks</span>
+                                    <span class="skill-badge">Delta Tables</span>
+                                    <span class="skill-badge">Azure Cognitive Vision</span>
+                                    <span class="skill-badge">Azure Functions</span>
+                                    <span class="skill-badge">Docker</span>
+                                    <span class="skill-badge">Terraform</span>
+                                </div>
+                                <a href="https://github.com/shaikmalikbasha" target="_blank" class="btn-small project-btn waves-effect">
+                                    <i class="material-icons left">code</i>GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- P5: MS Fabric POC -->
+                    <div class="col s12 m6 l4">
+                        <div class="project-card hoverable">
+                            <div class="project-img-wrapper">
+                                <img src="assets/images/ms_fabric.png" alt="Microsoft Fabric POC" class="project-img" />
+                                <div class="project-overlay">
+                                    <span class="project-type-tag">Cloud Cost · Analytics</span>
+                                </div>
+                            </div>
+                            <div class="project-body">
+                                <h6 class="project-title">Microsoft Fabric POC</h6>
+                                <p class="project-problem"><strong>Problem:</strong> Engineering leadership needed evaluation of Microsoft Fabric as a unified analytics platform before enterprise commitment.</p>
+                                <p class="project-solution"><strong>Solution:</strong> Led end-to-end POC designing a <strong>cloud cost analytics pipeline</strong> within Fabric. Delivered architecture recommendations for future platform modernisation.</p>
+                                <div class="project-stack">
+                                    <span class="skill-badge">Microsoft Fabric</span>
+                                    <span class="skill-badge">ADLS Gen2</span>
+                                    <span class="skill-badge">SQL</span>
+                                </div>
+                                <a href="https://github.com/shaikmalikbasha" target="_blank" class="btn-small project-btn waves-effect">
+                                    <i class="material-icons left">code</i>GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- ===================== CERTIFICATIONS & EDUCATION ===================== -->
+    <div class="section-wrapper">
+        <section id="certifications" class="section scrollspy">
+            <div class="container">
+                <div class="row">
+                    <div class="col s12 center-align">
+                        <h4 class="section-title"><i class="material-icons">verified</i>Certifications &amp; Education</h4>
+                        <div class="section-divider"></div>
+                        <p class="section-subtitle">Globally recognised credentials validated through continuous learning.</p>
+                    </div>
+
+                    <!-- Certifications -->
+                    <div class="col s12 m7">
+                        <h5 class="subsection-title"><i class="material-icons tiny">stars</i>&nbsp;Certifications</h5>
+                        <ul class="cert-list">
+
+                            <li class="cert-item">
+                                <div class="cert-logo-wrap">
+                                    <img src="assets/images/snowflake_computing_logo.jpg" alt="Snowflake" class="cert-logo" loading="lazy" />
+                                </div>
+                                <div class="cert-details">
+                                    <span class="cert-name">SnowPro Core Certification</span>
+                                    <span class="cert-issuer">Snowflake · Mar 2025</span>
+                                    <a href="https://achieve.snowflake.com/d446ff78-955e-4a51-ae2f-d84fe4a6dfbb" target="_blank" class="cert-link">
+                                        <i class="material-icons tiny">open_in_new</i> View Certificate
+                                    </a>
+                                </div>
+                            </li>
+
+                            <li class="cert-item">
+                                <div class="cert-logo-wrap">
+                                    <img src="assets/images/microsoft_logo.jpg" alt="Microsoft" class="cert-logo" loading="lazy" />
+                                </div>
+                                <div class="cert-details">
+                                    <span class="cert-name">Azure Data Engineer Associate (DP-203)</span>
+                                    <span class="cert-issuer">Microsoft · Jan 2023</span>
+                                    <a href="https://learn.microsoft.com/en-us/users/shaikmalikbasha/credentials/24a857f123a29b4" target="_blank" class="cert-link">
+                                        <i class="material-icons tiny">open_in_new</i> View Certificate
+                                    </a>
+                                </div>
+                            </li>
+
+                            <li class="cert-item">
+                                <div class="cert-logo-wrap">
+                                    <img src="assets/images/udemy_logo.jpg" alt="Udemy" class="cert-logo" loading="lazy" />
+                                </div>
+                                <div class="cert-details">
+                                    <span class="cert-name">Azure Databricks &amp; Spark For Data Engineers</span>
+                                    <span class="cert-issuer">Udemy · Jun 2023</span>
+                                    <a href="https://www.udemy.com/certificate/UC-f2ef7e1b-0c81-4deb-a509-e563d1450e91/" target="_blank" class="cert-link">
+                                        <i class="material-icons tiny">open_in_new</i> View Certificate
+                                    </a>
+                                </div>
+                            </li>
+
+                            <li class="cert-item">
+                                <div class="cert-logo-wrap">
+                                    <img src="assets/images/udemy_logo.jpg" alt="Udemy" class="cert-logo" loading="lazy" />
+                                </div>
+                                <div class="cert-details">
+                                    <span class="cert-name">Azure Data Factory For Data Engineers</span>
+                                    <span class="cert-issuer">Udemy · Nov 2021</span>
+                                    <a href="https://www.udemy.com/certificate/UC-a6f1d34c-f554-4dea-aa7b-028fb46b582c/" target="_blank" class="cert-link">
+                                        <i class="material-icons tiny">open_in_new</i> View Certificate
+                                    </a>
+                                </div>
+                            </li>
+
+                            <li class="cert-item">
+                                <div class="cert-logo-wrap">
+                                    <img src="assets/images/udemy_logo.jpg" alt="Udemy" class="cert-logo" loading="lazy" />
+                                </div>
+                                <div class="cert-details">
+                                    <span class="cert-name">Building REST APIs using Flask &amp; Python</span>
+                                    <span class="cert-issuer">Udemy · Aug 2020</span>
+                                    <a href="https://www.udemy.com/certificate/UC-5515650f-35ba-44e9-a354-c2967939f5b3/" target="_blank" class="cert-link">
+                                        <i class="material-icons tiny">open_in_new</i> View Certificate
+                                    </a>
+                                </div>
+                            </li>
+
+                            <li class="cert-item">
+                                <div class="cert-logo-wrap">
+                                    <img src="assets/images/udemy_logo.jpg" alt="Udemy" class="cert-logo" loading="lazy" />
+                                </div>
+                                <div class="cert-details">
+                                    <span class="cert-name">Docker for Absolute Beginners (DevOps)</span>
+                                    <span class="cert-issuer">Udemy · Sep 2020</span>
+                                    <a href="https://www.udemy.com/certificate/UC-953aca0d-aae8-4338-ada1-a07f41a05f9b/" target="_blank" class="cert-link">
+                                        <i class="material-icons tiny">open_in_new</i> View Certificate
+                                    </a>
+                                </div>
+                            </li>
+
+                            <li class="cert-item">
+                                <div class="cert-logo-wrap">
+                                    <img src="assets/images/udemy_logo.jpg" alt="Udemy" class="cert-logo" loading="lazy" />
+                                </div>
+                                <div class="cert-details">
+                                    <span class="cert-name">GitHub Copilot – The Complete Guide</span>
+                                    <span class="cert-issuer">Udemy · Nov 2024</span>
+                                    <a href="https://www.udemy.com/certificate/UC-88f3f618-71de-45ec-b5c1-03ed06606f4d/" target="_blank" class="cert-link">
+                                        <i class="material-icons tiny">open_in_new</i> View Certificate
+                                    </a>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <!-- Education -->
+                    <div class="col s12 m5">
+                        <h5 class="subsection-title"><i class="material-icons tiny">school</i>&nbsp;Education</h5>
+                        <div class="edu-list">
+
+                            <div class="edu-item card-custom">
+                                <i class="material-icons">engineering</i>
+                                <div>
+                                    <span class="edu-degree">Bachelor of Technology (B.Tech)</span>
+                                    <span class="edu-field">Computer Science &amp; Engineering</span>
+                                    <span class="edu-institution">Brindavan Institute of Technology &amp; Science – Kurnool</span>
+                                    <span class="edu-meta">JNTUA · Graduated 2019 · 75%</span>
+                                </div>
+                            </div>
+
+                            <div class="edu-item card-custom">
+                                <i class="material-icons">auto_stories</i>
+                                <div>
+                                    <span class="edu-degree">Intermediate (XII Class)</span>
+                                    <span class="edu-field">A.P. Board of Intermediate Education</span>
+                                    <span class="edu-institution">Nalanda Junior College – Kurnool</span>
+                                    <span class="edu-meta">Completed 2015 · 87%</span>
+                                </div>
+                            </div>
+
+                            <div class="edu-item card-custom">
+                                <i class="material-icons">menu_book</i>
+                                <div>
+                                    <span class="edu-degree">SSC (X Class)</span>
+                                    <span class="edu-field">A.P. Board of Secondary Education</span>
+                                    <span class="edu-institution">Zilla Parishad High School – Nannur</span>
+                                    <span class="edu-meta">Completed 2013 · 93%</span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- ===================== CONTACT (NEW) ===================== -->
+    <div class="section-wrapper surface-alt">
+        <section id="contact" class="section scrollspy">
+            <div class="container">
+                <div class="row">
+                    <div class="col s12 center-align">
+                        <h4 class="section-title"><i class="material-icons">email</i>Get In Touch</h4>
+                        <div class="section-divider"></div>
+                        <p class="section-subtitle">Open to Senior Data Engineer, Data &amp; AI Engineer, and Principal Engineer roles globally. Let's connect.</p>
+                    </div>
+
+                    <div class="col s12 m4 center-align">
+                        <div class="contact-card card-custom hoverable">
+                            <i class="material-icons large accent-text contact-icon">email</i>
+                            <h6 class="contact-label">Email</h6>
+                            <a href="mailto:shaikmalikbasha1998@gmail.com" class="contact-value accent-text">
+                                shaikmalikbasha1998@gmail.com
                             </a>
                         </div>
                     </div>
 
-                    <div class="col l4 offset-l2 s3">
-                        <h5 class="white-text">Links</h5>
-                        <ul>
-                            <li><a class="grey-text text-lighten-3" href="#home-section">Home</a></li>
-                            <li><a class="grey-text text-lighten-3" href="#about">About</a></li>
-                            <li><a class="grey-text text-lighten-3" href="#skills">Skills</a></li>
-                            <li><a class="grey-text text-lighten-3" href="#experience">Experience</a></li>
-                            <li><a class="grey-text text-lighten-3" href="#projects">Projects</a></li>
-                            <li><a class="grey-text text-lighten-3" href="#certifications">Certifications</a></li>
-                        </ul>
+                    <div class="col s12 m4 center-align">
+                        <div class="contact-card card-custom hoverable">
+                            <i class="fa-brands fa-linkedin large accent-text contact-icon"></i>
+                            <h6 class="contact-label">LinkedIn</h6>
+                            <a href="https://www.linkedin.com/in/shaik-malik-basha-2b4367167" target="_blank" class="contact-value accent-text">
+                                /shaik-malik-basha
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col s12 m4 center-align">
+                        <div class="contact-card card-custom hoverable">
+                            <i class="fa-brands fa-github large accent-text contact-icon"></i>
+                            <h6 class="contact-label">GitHub</h6>
+                            <a href="https://github.com/shaikmalikbasha" target="_blank" class="contact-value accent-text">
+                                /shaikmalikbasha
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col s12 center-align" style="margin-top: 24px;">
+                        <a href="assets/docs/Malik - Sr Data Engineer - Resume.pdf" target="_blank"
+                            class="btn cta-primary waves-effect waves-light">
+                            <i class="material-icons left">file_download</i>Download Resume
+                        </a>
                     </div>
                 </div>
             </div>
-
-            <div class="footer-copyright">
-                <div class="container center-align">
-                    © 2025 Shaik Malik Basha. All rights reserved.
-                </div>
-            </div>
-        </footer>
+        </section>
     </div>
 
-    <!-- GO TO TOP BUTTON -->
-    <a id="goTopBtn" class="pink darken-4 btn-floating btn-large go-top-btn">
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="page-footer footer-main">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s9">
+                    <h5 class="white-text">Shaik Malik Basha</h5>
+                    <p class="footer-tagline">
+                        Principal Data &amp; AI Engineer · Azure · Databricks · Snowflake · LangChain · FastAPI · Terraform
+                    </p>
+                    <div class="footer-social">
+                        <a href="https://www.instagram.com/__shaikmalikbasha__" target="_blank" aria-label="Instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/shaik-malik-basha-2b4367167" target="_blank" aria-label="LinkedIn">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/shaikmalikbasha" target="_blank" aria-label="GitHub">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col l4 offset-l2 s3">
+                    <h5 class="white-text">Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="#home-section">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#ai-section">AI &amp; LLM</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#certifications">Certifications</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container center-align">
+                © 2025 Shaik Malik Basha. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- GO TO TOP -->
+    <a id="goTopBtn" class="btn-floating btn-large go-top-btn waves-effect waves-light">
         <i class="material-icons">arrow_upward</i>
     </a>
 
-    <!--JavaScript at end of body for optimized loading-->
-    <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+    <!-- Scripts -->
     <script type="text/javascript" src="js/materialize.min.js"></script>
-
-    <!-- Main JS -->
     <script src="js/main.js"></script>
-</body>
 
+</body>
 </html>
