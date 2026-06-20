@@ -1,47 +1,63 @@
 // ── Theme toggle ──────────────────────────────────────────────
 function initTheme() {
   const html = document.documentElement;
-  const btn  = document.getElementById('theme-toggle');
-  const icon = btn ? btn.querySelector('.theme-icon') : null;
 
-  const saved = localStorage.getItem('portfolio-theme') || 'light';
-  html.setAttribute('data-theme', saved);
-  if (icon) icon.textContent = saved === 'dark' ? 'dark_mode' : 'light_mode';
+  const desktopBtn = document.getElementById("theme-toggle");
+  const mobileBtn = document.getElementById("mobile-theme-toggle");
 
-  if (btn) {
-    btn.addEventListener('click', () => {
-      const next = html.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
-      html.setAttribute('data-theme', next);
-      localStorage.setItem('portfolio-theme', next);
-      if (icon) icon.textContent = next === 'dark' ? 'dark_mode' : 'light_mode';
+  const saved = localStorage.getItem("portfolio-theme") || "light";
+
+  function updateTheme(theme) {
+    html.setAttribute("data-theme", theme);
+    localStorage.setItem("portfolio-theme", theme);
+
+    document.querySelectorAll(".theme-icon").forEach((icon) => {
+      icon.textContent = theme === "dark" ? "dark_mode" : "light_mode";
     });
   }
+
+  updateTheme(saved);
+
+  const toggleTheme = () => {
+    const next = html.getAttribute("data-theme") === "dark" ? "light" : "dark";
+
+    updateTheme(next);
+  };
+
+  desktopBtn?.addEventListener("click", toggleTheme);
+  mobileBtn?.addEventListener("click", toggleTheme);
 }
 
 // ── Materialize init ──────────────────────────────────────────
 function initMaterialize() {
-  M.Sidenav.init(document.querySelectorAll('.sidenav'), { edge: 'left', inDuration: 250 });
-  M.Modal.init(document.querySelectorAll('.modal'), { opacity: 0.9, inDuration: 300 });
+  M.Sidenav.init(document.querySelectorAll(".sidenav"), {
+    edge: "left",
+    inDuration: 250,
+  });
+  M.Modal.init(document.querySelectorAll(".modal"), {
+    opacity: 0.9,
+    inDuration: 300,
+  });
 }
 
 // ── Animated typing text ──────────────────────────────────────
 function animateText() {
   const phrases = [
-    'real-time insights.',
-    'intelligent data systems.',
-    'AI-powered pipelines.',
-    'scalable cloud platforms.',
-    'LLM-integrated APIs.',
-    'actionable analytics.',
-    'self-healing data quality.',
+    "real-time insights.",
+    "intelligent data systems.",
+    "AI-powered pipelines.",
+    "scalable cloud platforms.",
+    "LLM-integrated APIs.",
+    "actionable analytics.",
+    "self-healing data quality.",
   ];
 
-  const el = document.getElementById('animated-text');
+  const el = document.getElementById("animated-text");
   if (!el) return;
 
   let phraseIndex = 0;
   let letterIndex = 0;
-  let isDeleting  = false;
+  let isDeleting = false;
 
   function typeEffect() {
     const current = phrases[phraseIndex];
@@ -68,20 +84,20 @@ function animateText() {
 
 // ── Go-to-top button ──────────────────────────────────────────
 function initGoToTop() {
-  const btn = document.getElementById('goTopBtn');
+  const btn = document.getElementById("goTopBtn");
   if (!btn) return;
 
-  window.addEventListener('scroll', () => {
-    btn.classList.toggle('show', window.scrollY > 300);
+  window.addEventListener("scroll", () => {
+    btn.classList.toggle("show", window.scrollY > 300);
   });
 
-  btn.addEventListener('click', () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+  btn.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
   });
 }
 
 // ── Boot ──────────────────────────────────────────────────────
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener("DOMContentLoaded", () => {
   initTheme();
   initMaterialize();
   animateText();
