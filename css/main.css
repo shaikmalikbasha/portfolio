@@ -267,7 +267,7 @@ nav.nav-main {
   align-items: center;
 }
 
-.hero-inner { width: 100%; padding: 90px 0 60px; }
+.hero-inner { width: 100%; padding: 20px 0 40px; }
 
 .hero-content { text-align: center; }
 
@@ -437,12 +437,34 @@ nav.nav-main {
 .ai-tags { display: flex; flex-wrap: wrap; justify-content: center; gap: 6px; }
 
 /* =============================================
+   EQUAL-HEIGHT CARD ROWS
+   ============================================= */
+#skills .row,
+#projects .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#skills .row > [class*="col"],
+#projects .row > [class*="col"] {
+  display: flex;
+  flex-direction: column;
+}
+
+/* section heading cols must not stretch */
+#skills .row > .col.s12.center-align,
+#projects .row > .col.s12.center-align {
+  width: 100%;
+}
+
+/* =============================================
    SKILL BADGES
    ============================================= */
 .skill-group {
   background-color: var(--surface);
   border: 1px solid var(--surface-border);
   border-radius: 12px;
+  flex: 1;
   padding: 18px 20px;
   margin-bottom: 16px;
   box-shadow: var(--shadow-sm);
@@ -571,7 +593,11 @@ nav.nav-main {
   margin-bottom: 20px;
   box-shadow: var(--shadow-sm);
   transition: box-shadow 0.2s ease, transform 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
+
 
 .project-card.hoverable:hover {
   box-shadow: var(--shadow-lg);
@@ -602,7 +628,12 @@ nav.nav-main {
   font-family: 'JetBrains Mono', monospace;
 }
 
-.project-body { padding: 16px 18px 18px; }
+.project-body {
+  padding: 16px 18px 18px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
 
 .project-title { font-size: 1rem; font-weight: 700; margin: 0 0 10px; color: var(--accent); }
 
