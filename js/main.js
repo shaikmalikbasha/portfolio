@@ -1,121 +1,105 @@
-// Initialize Materialize Components
+// ── Theme toggle ──────────────────────────────────────────────
+function initTheme() {
+  const html = document.documentElement;
+
+  const desktopBtn = document.getElementById("theme-toggle");
+  const mobileBtn = document.getElementById("mobile-theme-toggle");
+
+  const saved = localStorage.getItem("portfolio-theme") || "light";
+
+  function updateTheme(theme) {
+    html.setAttribute("data-theme", theme);
+    localStorage.setItem("portfolio-theme", theme);
+
+    document.querySelectorAll(".theme-icon").forEach((icon) => {
+      icon.textContent = theme === "dark" ? "dark_mode" : "light_mode";
+    });
+  }
+
+  updateTheme(saved);
+
+  const toggleTheme = () => {
+    const next = html.getAttribute("data-theme") === "dark" ? "light" : "dark";
+
+    updateTheme(next);
+  };
+
+  desktopBtn?.addEventListener("click", toggleTheme);
+  mobileBtn?.addEventListener("click", toggleTheme);
+}
+
+// ── Materialize init ──────────────────────────────────────────
 function initMaterialize() {
-  // Mobile sidenav initialization
-  const sideNavElements = document.querySelectorAll(".sidenav");
-  M.Sidenav.init(sideNavElements, {
+  M.Sidenav.init(document.querySelectorAll(".sidenav"), {
     edge: "left",
     inDuration: 250,
   });
-
-  // Modal initialization
-  const modalElems = document.querySelectorAll(".modal");
-  M.Modal.init(modalElems, {
+  M.Modal.init(document.querySelectorAll(".modal"), {
     opacity: 0.9,
     inDuration: 300,
   });
-
-  // Tabs initialization
-  const tabElems = document.querySelectorAll(".tabs");
-  M.Tabs.init(tabElems, {
-    swipeable: true,
-    duration: 200,
-  });
-
-  // Carousel initialization
-  const carouselElems = document.querySelectorAll(".carousel");
-  const carouselInstances = M.Carousel.init(carouselElems, {
-    indicators: true,
-    duration: 200,
-  });
-
-  // Guard: no carousel found
-  if (!carouselInstances || carouselInstances.length === 0) return;
-
-  const carouselInstance = carouselInstances[0];
-  const carouselElem = carouselElems[0];
-
-  // Auto rotate
-  let autoRotate = setInterval(() => {
-    carouselInstance.next();
-  }, 3000);
-
-  // Pause on hover
-  carouselElem.addEventListener("mouseenter", () => {
-    clearInterval(autoRotate);
-  });
-
-  // Resume on leave
-  carouselElem.addEventListener("mouseleave", () => {
-    autoRotate = setInterval(() => {
-      carouselInstance.next();
-    }, 3000);
-  });
 }
 
+// ── Animated typing text ──────────────────────────────────────
 function animateText() {
   const phrases = [
-    "data-driven solutions!",
-    "scalable data pipelines!",
-    "intelligent APIs!",
-    "cloud-native architectures!",
-    "automated ML workflows!",
-    "end-to-end analytics systems!",
+    "real-time insights.",
+    "intelligent data systems.",
+    "AI-powered pipelines.",
+    "scalable cloud platforms.",
+    "LLM-integrated APIs.",
+    "actionable analytics.",
+    "self-healing data quality.",
   ];
 
-  const animatedText = document.getElementById("animated-text");
-  if (!animatedText) return;
+  const el = document.getElementById("animated-text");
+  if (!el) return;
 
   let phraseIndex = 0;
   let letterIndex = 0;
   let isDeleting = false;
 
   function typeEffect() {
-    const currentPhrase = phrases[phraseIndex];
+    const current = phrases[phraseIndex];
+    el.textContent = isDeleting
+      ? current.substring(0, letterIndex--)
+      : current.substring(0, letterIndex++);
 
-    animatedText.textContent = isDeleting
-      ? currentPhrase.substring(0, letterIndex--)
-      : currentPhrase.substring(0, letterIndex++);
+    let speed = isDeleting ? 55 : 90;
 
-    let typingSpeed = isDeleting ? 60 : 100;
-
-    if (!isDeleting && letterIndex === currentPhrase.length) {
-      typingSpeed = 1500;
+    if (!isDeleting && letterIndex === current.length) {
+      speed = 1800;
       isDeleting = true;
     } else if (isDeleting && letterIndex === 0) {
       isDeleting = false;
       phraseIndex = (phraseIndex + 1) % phrases.length;
-      typingSpeed = 300;
+      speed = 300;
     }
 
-    setTimeout(typeEffect, typingSpeed);
+    setTimeout(typeEffect, speed);
   }
 
   typeEffect();
 }
 
-function goToTop() {
-  const goTopBtn = document.getElementById("goTopBtn");
+// ── Go-to-top button ──────────────────────────────────────────
+function initGoToTop() {
+  const btn = document.getElementById("goTopBtn");
+  if (!btn) return;
 
-  window.addEventListener("scroll", function () {
-    if (window.scrollY > 300) {
-      goTopBtn.classList.add("show");
-    } else {
-      goTopBtn.classList.remove("show");
-    }
+  window.addEventListener("scroll", () => {
+    btn.classList.toggle("show", window.scrollY > 300);
   });
 
-  goTopBtn.addEventListener("click", function () {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
+  btn.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
   });
 }
 
-function initAfterDOMLoad() {
+// ── Boot ──────────────────────────────────────────────────────
+document.addEventListener("DOMContentLoaded", () => {
+  initTheme();
   initMaterialize();
   animateText();
-  goToTop();
-}
-
-document.addEventListener("DOMContentLoaded", initAfterDOMLoad);
+  initGoToTop();
+});
